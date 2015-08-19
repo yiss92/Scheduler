@@ -7,6 +7,8 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class ToDo extends JDialog {
 
@@ -58,10 +60,28 @@ public class ToDo extends JDialog {
 		}
 		
 		JButton btnNewButton = new JButton("\uC77C\uC815\uB9CC\uB4E4\uAE30");
+		btnNewButton.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				Modified modified = new Modified();
+				modified.setVisible(true);
+				contentPanel.setVisible(false);
+				dispose();
+			}
+		});
 		btnNewButton.setBounds(89, 218, 99, 25);
 		contentPanel.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("\uC77C\uC815\uC218\uC815");
+		btnNewButton_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				Modified modified = new Modified();
+				modified.setVisible(true);
+				contentPanel.setVisible(false);
+				dispose();
+			}
+		});
 		btnNewButton_1.setBounds(227, 218, 99, 25);
 		contentPanel.add(btnNewButton_1);
 	}

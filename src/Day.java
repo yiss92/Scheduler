@@ -3,6 +3,8 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class Day {
 
@@ -61,12 +63,24 @@ public class Day {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 806);
+		frame.setBounds(100, 100, 795, 806);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		textField = new JTextField();
-		textField.setBounds(79, 37, 351, 21);
+		textField.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				//Modified modified = new Modified();
+				//new Modified();
+				
+				//modified.pack();
+				//modified.setVisible(true);
+				ToDo todo = new ToDo();
+				todo.setVisible(true);
+			}
+		});
+		textField.setBounds(79, 37, 696, 21);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
 		
@@ -79,7 +93,7 @@ public class Day {
 		frame.getContentPane().add(lblNewLabel_1);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(79, 65, 351, 21);
+		textField_1.setBounds(79, 65, 696, 21);
 		frame.getContentPane().add(textField_1);
 		textField_1.setColumns(10);
 		
@@ -89,7 +103,7 @@ public class Day {
 		
 		textField_2 = new JTextField();
 		textField_2.setColumns(10);
-		textField_2.setBounds(79, 93, 351, 21);
+		textField_2.setBounds(79, 93, 696, 21);
 		frame.getContentPane().add(textField_2);
 		
 		JLabel label_1 = new JLabel("\uC624\uC804 02\uC2DC");
@@ -98,7 +112,7 @@ public class Day {
 		
 		textField_3 = new JTextField();
 		textField_3.setColumns(10);
-		textField_3.setBounds(79, 121, 351, 21);
+		textField_3.setBounds(79, 121, 696, 21);
 		frame.getContentPane().add(textField_3);
 		
 		JLabel label_2 = new JLabel("\uC624\uC804 03\uC2DC");
@@ -107,7 +121,7 @@ public class Day {
 		
 		textField_4 = new JTextField();
 		textField_4.setColumns(10);
-		textField_4.setBounds(79, 149, 351, 21);
+		textField_4.setBounds(79, 149, 696, 21);
 		frame.getContentPane().add(textField_4);
 		
 		JLabel label_3 = new JLabel("\uC624\uC804 04\uC2DC");
@@ -116,7 +130,7 @@ public class Day {
 		
 		textField_5 = new JTextField();
 		textField_5.setColumns(10);
-		textField_5.setBounds(79, 177, 351, 21);
+		textField_5.setBounds(79, 177, 696, 21);
 		frame.getContentPane().add(textField_5);
 		
 		JLabel label_4 = new JLabel("\uC624\uC804 05\uC2DC");
@@ -125,7 +139,7 @@ public class Day {
 		
 		textField_6 = new JTextField();
 		textField_6.setColumns(10);
-		textField_6.setBounds(79, 205, 351, 21);
+		textField_6.setBounds(79, 205, 696, 21);
 		frame.getContentPane().add(textField_6);
 		
 		JLabel label_5 = new JLabel("\uC624\uC804 06\uC2DC");
@@ -134,7 +148,7 @@ public class Day {
 		
 		textField_7 = new JTextField();
 		textField_7.setColumns(10);
-		textField_7.setBounds(79, 233, 351, 21);
+		textField_7.setBounds(79, 233, 696, 21);
 		frame.getContentPane().add(textField_7);
 		
 		JLabel label_6 = new JLabel("\uC624\uC804 07\uC2DC");
@@ -143,7 +157,7 @@ public class Day {
 		
 		textField_8 = new JTextField();
 		textField_8.setColumns(10);
-		textField_8.setBounds(79, 261, 351, 21);
+		textField_8.setBounds(79, 261, 696, 21);
 		frame.getContentPane().add(textField_8);
 		
 		JLabel label_7 = new JLabel("\uC624\uC804 08\uC2DC");
@@ -152,7 +166,7 @@ public class Day {
 		
 		textField_9 = new JTextField();
 		textField_9.setColumns(10);
-		textField_9.setBounds(79, 289, 351, 21);
+		textField_9.setBounds(79, 289, 696, 21);
 		frame.getContentPane().add(textField_9);
 		
 		JLabel label_8 = new JLabel("\uC624\uC804 09\uC2DC");
@@ -161,7 +175,7 @@ public class Day {
 		
 		textField_10 = new JTextField();
 		textField_10.setColumns(10);
-		textField_10.setBounds(79, 317, 351, 21);
+		textField_10.setBounds(79, 317, 696, 21);
 		frame.getContentPane().add(textField_10);
 		
 		JLabel label_9 = new JLabel("\uC624\uC804 10\uC2DC");
@@ -170,7 +184,7 @@ public class Day {
 		
 		textField_11 = new JTextField();
 		textField_11.setColumns(10);
-		textField_11.setBounds(79, 345, 351, 21);
+		textField_11.setBounds(79, 345, 696, 21);
 		frame.getContentPane().add(textField_11);
 		
 		JLabel label_10 = new JLabel("\uC624\uC804 11\uC2DC");
@@ -179,7 +193,7 @@ public class Day {
 		
 		textField_12 = new JTextField();
 		textField_12.setColumns(10);
-		textField_12.setBounds(79, 373, 351, 21);
+		textField_12.setBounds(79, 373, 696, 21);
 		frame.getContentPane().add(textField_12);
 		
 		JLabel label_11 = new JLabel("\uC624\uD6C4 12\uC2DC");
@@ -188,7 +202,7 @@ public class Day {
 		
 		textField_13 = new JTextField();
 		textField_13.setColumns(10);
-		textField_13.setBounds(79, 401, 351, 21);
+		textField_13.setBounds(79, 401, 696, 21);
 		frame.getContentPane().add(textField_13);
 		
 		JLabel label_12 = new JLabel("\uC624\uD6C4 01\uC2DC");
@@ -197,7 +211,7 @@ public class Day {
 		
 		textField_14 = new JTextField();
 		textField_14.setColumns(10);
-		textField_14.setBounds(79, 429, 351, 21);
+		textField_14.setBounds(79, 429, 696, 21);
 		frame.getContentPane().add(textField_14);
 		
 		JLabel label_13 = new JLabel("\uC624\uD6C4 02\uC2DC");
@@ -206,12 +220,12 @@ public class Day {
 		
 		textField_15 = new JTextField();
 		textField_15.setColumns(10);
-		textField_15.setBounds(79, 457, 351, 21);
+		textField_15.setBounds(79, 457, 696, 21);
 		frame.getContentPane().add(textField_15);
 		
 		textField_16 = new JTextField();
 		textField_16.setColumns(10);
-		textField_16.setBounds(79, 485, 351, 21);
+		textField_16.setBounds(79, 485, 696, 21);
 		frame.getContentPane().add(textField_16);
 		
 		JLabel label_14 = new JLabel("\uC624\uD6C4 03\uC2DC");
@@ -220,7 +234,7 @@ public class Day {
 		
 		textField_17 = new JTextField();
 		textField_17.setColumns(10);
-		textField_17.setBounds(79, 516, 351, 21);
+		textField_17.setBounds(79, 516, 696, 21);
 		frame.getContentPane().add(textField_17);
 		
 		JLabel label_15 = new JLabel("\uC624\uD6C4 04\uC2DC");
@@ -229,7 +243,7 @@ public class Day {
 		
 		textField_18 = new JTextField();
 		textField_18.setColumns(10);
-		textField_18.setBounds(79, 547, 351, 21);
+		textField_18.setBounds(79, 547, 696, 21);
 		frame.getContentPane().add(textField_18);
 		
 		JLabel label_16 = new JLabel("\uC624\uD6C4 05\uC2DC");
@@ -238,7 +252,7 @@ public class Day {
 		
 		textField_19 = new JTextField();
 		textField_19.setColumns(10);
-		textField_19.setBounds(79, 578, 351, 21);
+		textField_19.setBounds(79, 578, 696, 21);
 		frame.getContentPane().add(textField_19);
 		
 		JLabel label_17 = new JLabel("\uC624\uD6C4 06\uC2DC");
@@ -247,7 +261,7 @@ public class Day {
 		
 		textField_20 = new JTextField();
 		textField_20.setColumns(10);
-		textField_20.setBounds(79, 609, 351, 21);
+		textField_20.setBounds(79, 609, 696, 21);
 		frame.getContentPane().add(textField_20);
 		
 		JLabel label_18 = new JLabel("\uC624\uD6C4 07\uC2DC");
@@ -256,7 +270,7 @@ public class Day {
 		
 		textField_21 = new JTextField();
 		textField_21.setColumns(10);
-		textField_21.setBounds(79, 640, 351, 21);
+		textField_21.setBounds(79, 640, 696, 21);
 		frame.getContentPane().add(textField_21);
 		
 		JLabel label_19 = new JLabel("\uC624\uD6C4 08\uC2DC");
@@ -265,7 +279,7 @@ public class Day {
 		
 		textField_22 = new JTextField();
 		textField_22.setColumns(10);
-		textField_22.setBounds(79, 671, 351, 21);
+		textField_22.setBounds(79, 671, 696, 21);
 		frame.getContentPane().add(textField_22);
 		
 		JLabel label_20 = new JLabel("\uC624\uD6C4 09\uC2DC");
@@ -274,7 +288,7 @@ public class Day {
 		
 		textField_23 = new JTextField();
 		textField_23.setColumns(10);
-		textField_23.setBounds(79, 702, 351, 21);
+		textField_23.setBounds(79, 702, 696, 21);
 		frame.getContentPane().add(textField_23);
 		
 		JLabel label_21 = new JLabel("\uC624\uD6C4 10\uC2DC");
@@ -283,7 +297,7 @@ public class Day {
 		
 		textField_24 = new JTextField();
 		textField_24.setColumns(10);
-		textField_24.setBounds(79, 733, 351, 21);
+		textField_24.setBounds(79, 733, 696, 21);
 		frame.getContentPane().add(textField_24);
 		
 		JLabel label_22 = new JLabel("\uC624\uD6C4 11\uC2DC");
