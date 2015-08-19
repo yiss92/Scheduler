@@ -101,7 +101,7 @@ public class Day {
 		frame.getContentPane().add(textField_1);
 		textField_1.setColumns(10);
 		//add
-		textField_1.setText(today.toDo[0]);
+		textField_1.setText("");
 		
 		JLabel label = new JLabel("\uC624\uC804 01\uC2DC");
 		label.setBounds(12, 96, 57, 15);
@@ -112,7 +112,7 @@ public class Day {
 		textField_2.setBounds(79, 93, 696, 21);
 		frame.getContentPane().add(textField_2);
 		//add
-		textField_2.setText(today.toDo[1]);
+		textField_2.setText("");
 		
 		JLabel label_1 = new JLabel("\uC624\uC804 02\uC2DC");
 		label_1.setBounds(12, 124, 57, 15);
@@ -123,7 +123,7 @@ public class Day {
 		textField_3.setBounds(79, 121, 696, 21);
 		frame.getContentPane().add(textField_3);
 		//
-		textField_3.setText(today.toDo[2]);
+		textField_3.setText("");
 		
 		JLabel label_2 = new JLabel("\uC624\uC804 03\uC2DC");
 		label_2.setBounds(12, 152, 57, 15);
@@ -134,7 +134,7 @@ public class Day {
 		textField_4.setBounds(79, 149, 696, 21);
 		frame.getContentPane().add(textField_4);
 		//
-		textField_4.setText(today.toDo[3]);
+		textField_4.setText("");
 		
 		JLabel label_3 = new JLabel("\uC624\uC804 04\uC2DC");
 		label_3.setBounds(12, 180, 57, 15);
@@ -145,7 +145,7 @@ public class Day {
 		textField_5.setBounds(79, 177, 696, 21);
 		frame.getContentPane().add(textField_5);
 		//add
-		textField_5.setText(today.toDo[4]);
+		textField_5.setText("");
 		
 		JLabel label_4 = new JLabel("\uC624\uC804 05\uC2DC");
 		label_4.setBounds(12, 208, 57, 15);
@@ -156,7 +156,7 @@ public class Day {
 		textField_6.setBounds(79, 205, 696, 21);
 		frame.getContentPane().add(textField_6);
 		//add
-		textField_6.setText(today.toDo[5]);
+		textField_6.setText("");
 		
 		JLabel label_5 = new JLabel("\uC624\uC804 06\uC2DC");
 		label_5.setBounds(12, 236, 57, 15);
@@ -167,7 +167,7 @@ public class Day {
 		textField_7.setBounds(79, 233, 696, 21);
 		frame.getContentPane().add(textField_7);
 		//add
-		textField_7.setText(today.toDo[6]);
+		textField_7.setText("");
 		
 		JLabel label_6 = new JLabel("\uC624\uC804 07\uC2DC");
 		label_6.setBounds(12, 264, 57, 15);
@@ -178,7 +178,7 @@ public class Day {
 		textField_8.setBounds(79, 261, 696, 21);
 		frame.getContentPane().add(textField_8);
 		//add
-		textField_8.setText(today.toDo[7]);
+		textField_8.setText("");
 		
 		JLabel label_7 = new JLabel("\uC624\uC804 08\uC2DC");
 		label_7.setBounds(12, 292, 57, 15);
@@ -189,7 +189,7 @@ public class Day {
 		textField_9.setBounds(79, 289, 696, 21);
 		frame.getContentPane().add(textField_9);
 		//add
-		textField_9.setText(today.toDo[8]);
+		textField_9.setText("");
 		
 		JLabel label_8 = new JLabel("\uC624\uC804 09\uC2DC");
 		label_8.setBounds(12, 320, 57, 15);
@@ -200,7 +200,7 @@ public class Day {
 		textField_10.setBounds(79, 317, 696, 21);
 		frame.getContentPane().add(textField_10);
 		//add
-		textField_10.setText(today.toDo[9]);
+		textField_10.setText("");
 		
 		JLabel label_9 = new JLabel("\uC624\uC804 10\uC2DC");
 		label_9.setBounds(12, 348, 57, 15);
@@ -211,7 +211,7 @@ public class Day {
 		textField_11.setBounds(79, 345, 696, 21);
 		frame.getContentPane().add(textField_11);
 		//add
-		textField_11.setText(today.toDo[10]);
+		textField_11.setText("");
 		
 		JLabel label_10 = new JLabel("\uC624\uC804 11\uC2DC");
 		label_10.setBounds(12, 376, 57, 15);
@@ -222,7 +222,7 @@ public class Day {
 		textField_12.setBounds(79, 373, 696, 21);
 		frame.getContentPane().add(textField_12);
 		//add
-		textField_12.setText(today.toDo[11]);
+		textField_12.setText("");
 		
 		JLabel label_11 = new JLabel("\uC624\uD6C4 12\uC2DC");
 		label_11.setBounds(12, 404, 57, 15);
@@ -233,7 +233,7 @@ public class Day {
 		textField_13.setBounds(79, 401, 696, 21);
 		frame.getContentPane().add(textField_13);
 		//add
-		textField_13.setText(today.toDo[12]);
+		textField_13.setText("");
 		
 		JLabel label_12 = new JLabel("\uC624\uD6C4 01\uC2DC");
 		label_12.setBounds(12, 432, 57, 15);
@@ -244,7 +244,7 @@ public class Day {
 		textField_14.setBounds(79, 429, 696, 21);
 		frame.getContentPane().add(textField_14);
 		//add
-		textField_14.setText(today.toDo[13]);
+		textField_14.setText("");
 		
 		JLabel label_13 = new JLabel("\uC624\uD6C4 02\uC2DC");
 		label_13.setBounds(12, 460, 57, 15);
@@ -255,14 +255,14 @@ public class Day {
 		textField_15.setBounds(79, 457, 696, 21);
 		frame.getContentPane().add(textField_15);
 		//add
-		textField_15.setText(today.toDo[14]);
+		textField_15.setText("");
 		
 		textField_16 = new JTextField();
 		textField_16.setColumns(10);
 		textField_16.setBounds(79, 485, 696, 21);
 		frame.getContentPane().add(textField_16);
 		//add
-		textField_16.setText(today.toDo[15]);
+		textField_16.setText("");
 		
 		JLabel label_14 = new JLabel("\uC624\uD6C4 03\uC2DC");
 		label_14.setBounds(12, 488, 57, 15);
@@ -273,7 +273,7 @@ public class Day {
 		textField_17.setBounds(79, 516, 696, 21);
 		frame.getContentPane().add(textField_17);
 		//add
-		textField_17.setText(today.toDo[16]);
+		textField_17.setText("");
 		
 		JLabel label_15 = new JLabel("\uC624\uD6C4 04\uC2DC");
 		label_15.setBounds(12, 519, 57, 15);
@@ -284,7 +284,7 @@ public class Day {
 		textField_18.setBounds(79, 547, 696, 21);
 		frame.getContentPane().add(textField_18);
 		//add
-		textField_18.setText(today.toDo[17]);
+		textField_18.setText("");
 		
 		JLabel label_16 = new JLabel("\uC624\uD6C4 05\uC2DC");
 		label_16.setBounds(12, 550, 57, 15);
@@ -295,7 +295,7 @@ public class Day {
 		textField_19.setBounds(79, 578, 696, 21);
 		frame.getContentPane().add(textField_19);
 		//add
-		textField_19.setText(today.toDo[18]);
+		textField_19.setText("");
 		
 		JLabel label_17 = new JLabel("\uC624\uD6C4 06\uC2DC");
 		label_17.setBounds(12, 581, 57, 15);
@@ -306,7 +306,7 @@ public class Day {
 		textField_20.setBounds(79, 609, 696, 21);
 		frame.getContentPane().add(textField_20);
 		//add
-		textField_20.setText(today.toDo[19]);
+		textField_20.setText("");
 		
 		JLabel label_18 = new JLabel("\uC624\uD6C4 07\uC2DC");
 		label_18.setBounds(12, 612, 57, 15);
@@ -317,7 +317,7 @@ public class Day {
 		textField_21.setBounds(79, 640, 696, 21);
 		frame.getContentPane().add(textField_21);
 		//add
-		textField_21.setText(today.toDo[20]);
+		textField_21.setText("");
 		
 		JLabel label_19 = new JLabel("\uC624\uD6C4 08\uC2DC");
 		label_19.setBounds(12, 643, 57, 15);
@@ -328,7 +328,7 @@ public class Day {
 		textField_22.setBounds(79, 671, 696, 21);
 		frame.getContentPane().add(textField_22);
 		//add
-		textField_22.setText(today.toDo[21]);
+		textField_22.setText("");
 		
 		JLabel label_20 = new JLabel("\uC624\uD6C4 09\uC2DC");
 		label_20.setBounds(12, 674, 57, 15);
@@ -339,7 +339,7 @@ public class Day {
 		textField_23.setBounds(79, 702, 696, 21);
 		frame.getContentPane().add(textField_23);
 		//add
-		textField_23.setText(today.toDo[22]);
+		textField_23.setText("");
 		
 		JLabel label_21 = new JLabel("\uC624\uD6C4 10\uC2DC");
 		label_21.setBounds(12, 705, 57, 15);
@@ -350,7 +350,7 @@ public class Day {
 		textField_24.setBounds(79, 733, 696, 21);
 		frame.getContentPane().add(textField_24);
 		//add
-		textField_24.setText(today.toDo[23]);
+		textField_24.setText("");
 		
 		JLabel label_22 = new JLabel("\uC624\uD6C4 11\uC2DC");
 		label_22.setBounds(12, 736, 57, 15);

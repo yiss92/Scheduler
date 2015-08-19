@@ -2,7 +2,7 @@ import java.util.Calendar;
 
 public class Today {
 	private String title;
-	protected String[] toDo;
+	protected String toDo;
 	private String location;
 	private String described;
 	private String day;
@@ -11,13 +11,16 @@ public class Today {
 
 	public Today() {
 		super();
-		toDo = new String[scedulNumber];
 	}
 
-	public Today(String title) {
+	public Today(String title, String toDo, String location, String described, String day, Calendar calendar) {
 		super();
 		this.title = title;
-		toDo = new String[scedulNumber];
+		this.toDo = toDo;
+		this.location = location;
+		this.described = described;
+		this.day = day;
+		this.calendar = calendar;
 	}
 
 	public String getTitle() {
@@ -28,12 +31,16 @@ public class Today {
 		this.title = title;
 	}
 
-	public String[] getToDo() {
+	public String getToDo() {
 		return toDo;
 	}
 
-	public void setToDo(String[] toDo) {
+	public void setToDo(String toDo) {
 		this.toDo = toDo;
+	}
+
+	public int getScedulNumber() {
+		return scedulNumber;
 	}
 
 	public String getLocation() {
