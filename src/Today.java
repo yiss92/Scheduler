@@ -2,21 +2,22 @@ import java.util.Calendar;
 
 public class Today {
 	private String title;
-	private String[] toDo;
+	protected String[] toDo;
 	private String location;
 	private String described;
 	private String day;
 	private Calendar calendar;
+	private final int scedulNumber = 24;
 
 	public Today() {
 		super();
-		toDo = new String[12];
+		toDo = new String[scedulNumber];
 	}
 
 	public Today(String title) {
 		super();
 		this.title = title;
-		toDo = new String[12];
+		toDo = new String[scedulNumber];
 	}
 
 	public String getTitle() {
