@@ -9,6 +9,8 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class ToDo extends JDialog {
 
@@ -36,6 +38,7 @@ public class ToDo extends JDialog {
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
+		//yiss92
 		Today today = new Today();
 		DayDao daydao = new DayDao();
 		
@@ -59,16 +62,18 @@ public class ToDo extends JDialog {
 			textField = new JTextField();
 			textField.setBounds(150, 64, 266, 21);
 			contentPanel.add(textField);
-			textField.setColumns(10);
-			
-			today.setTitle(textField.getText());
+			textField.setColumns(10);					
 		}
 		
 		JButton btnNewButton = new JButton("\uC77C\uC815\uB9CC\uB4E4\uAE30");
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				daydao.insert(today);
+				//yiss92
+				//yiss92
+				int temp = 0;
+				today.setTitle(textField.getText());
+				daydao.insert(today,temp);
 				
 				Modified modified = new Modified();
 				modified.setVisible(true);

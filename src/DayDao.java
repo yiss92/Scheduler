@@ -14,7 +14,7 @@ public class DayDao {
 	private PreparedStatement pstmt;
 	private ResultSet rs;
 	private String sql;
-
+	
 	private static final String DVN = "com.mysql.jdbc.Driver";
 	private static final String DBU = "jdbc:mysql://127.0.0.1:3306/test";
 	private static final String DB_ID = "root";
@@ -49,7 +49,31 @@ public class DayDao {
 	public void insert(Today account) {
 
 		try {
-			String sql = "insert into test(title)"
+			String sql = "insert into todo(title)"
+					+ " values(?)";
+
+			pstmt = con.prepareStatement(sql);
+			
+			pstmt.setString(1, account.getTitle());
+//			pstmt.setString(2, account.getToDo());
+//			pstmt.setString(3, account.getLocation());
+//			pstmt.setString(4, account.getDescribed());
+//			pstmt.setString(5, account.getYear());
+//			pstmt.setString(6, account.getWeek());
+//			pstmt.setString(7, account.getDay());
+//			pstmt.setString(8, account.getHours());
+			int result = pstmt.executeUpdate();
+			System.out.println("update result: " + result);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public void insert(Today account, int temp) {
+
+		try {
+			String sql = "insert into todo(title)"
 					+ " values(?)";
 
 			pstmt = con.prepareStatement(sql);
@@ -130,7 +154,7 @@ public class DayDao {
 		List<Today> result = new ArrayList<>();
 				
 		try {
-			sql = "select * from bank_tb";
+			sql = "select * from todo";
 			stmt = con.createStatement();
 			
 			rs = stmt.executeQuery(sql);
