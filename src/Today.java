@@ -5,7 +5,10 @@ public class Today {
 	protected String toDo;
 	private String location;
 	private String described;
+	private String year;
+	private String week;
 	private String day;
+	private String hours;
 	private Calendar calendar;
 	private final int scedulNumber = 24;
 
@@ -13,14 +16,17 @@ public class Today {
 		super();
 	}
 
-	public Today(String title, String toDo, String location, String described, String day, Calendar calendar) {
+	public Today(String title, String toDo, String location, String described, String year, String week, String day,
+			String hours) {
 		super();
 		this.title = title;
 		this.toDo = toDo;
 		this.location = location;
 		this.described = described;
+		this.year = year;
+		this.week = week;
 		this.day = day;
-		this.calendar = calendar;
+		this.hours = hours;
 	}
 
 	public String getTitle() {
@@ -74,4 +80,34 @@ public class Today {
 	public void setCalendar(Calendar calendar) {
 		this.calendar = calendar;
 	}
+
+
+	public String getYear() {
+		return year;
+	}
+
+
+	public void setYear(String year) {
+		this.year = year;
+	}
+
+
+	public String getWeek() {
+		return week;
+	}
+
+
+	public void setWeek(String week) {
+		this.week = week;
+	}
+
+	public String getHours() {
+		return hours;
+	}
+
+	public void setHours(String hours) {
+		this.hours = hours;
+	}
+	
+	
 }

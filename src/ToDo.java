@@ -36,6 +36,9 @@ public class ToDo extends JDialog {
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
+		Today today = new Today();
+		DayDao daydao = new DayDao();
+		
 		contentPanel.setLayout(null);
 		{
 			JLabel lblNewLabel = new JLabel("\uC2DC\uAC04");
@@ -57,12 +60,16 @@ public class ToDo extends JDialog {
 			textField.setBounds(150, 64, 266, 21);
 			contentPanel.add(textField);
 			textField.setColumns(10);
+			
+			today.setTitle(textField.getText());
 		}
 		
 		JButton btnNewButton = new JButton("\uC77C\uC815\uB9CC\uB4E4\uAE30");
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+				daydao.insert(today);
+				
 				Modified modified = new Modified();
 				modified.setVisible(true);
 				contentPanel.setVisible(false);

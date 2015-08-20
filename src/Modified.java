@@ -44,7 +44,6 @@ public class Modified extends JDialog {
 		}
 		{
 			textField = new JTextField();
-			textField.setText("\uB0B4\uC6A9");
 			textField.setBounds(79, 61, 317, 21);
 			getContentPane().add(textField);
 			textField.setColumns(10);
@@ -73,6 +72,6 @@ public class Modified extends JDialog {
 		
 		JTextArea textArea = new JTextArea();
 		textArea.setBounds(79, 208, 317, 43);
-		getContentPane().add(textArea);
+		getContentPane().add(textArea);				
 	}
 }

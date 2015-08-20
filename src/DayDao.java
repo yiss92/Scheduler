@@ -7,7 +7,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import exam02.BankAccount;
 
 public class DayDao {
 	private Connection con;
@@ -22,7 +21,7 @@ public class DayDao {
 	private static final String DB_PW = "hanbit";
 	
 	
-	public BankDao() {
+	public DayDao() {
 
 		try {
 			Class.forName(DVN);
@@ -38,7 +37,7 @@ public class DayDao {
 		}
 	}
 
-	public BankDao(Connection con, Statement stmt, PreparedStatement pstmt, ResultSet rs, String sql) {
+	public DayDao(Connection con, Statement stmt, PreparedStatement pstmt, ResultSet rs, String sql) {
 		super();
 		this.con = con;
 		this.stmt = stmt;
@@ -47,18 +46,22 @@ public class DayDao {
 		this.sql = sql;
 	}
 
-	public void insert(BankAccount account) {
+	public void insert(Today account) {
 
 		try {
-			String sql = "insert into bank_tb(ownername, accountnum, password, balance)"
-					+ " values(?,?,?,?)";
+			String sql = "insert into test(title)"
+					+ " values(?)";
 
 			pstmt = con.prepareStatement(sql);
 			
-			pstmt.setString(1, account.getOwnerName());
-			pstmt.setString(2, account.getAccountNum());
-			pstmt.setString(3, account.getPassword());
-			pstmt.setInt(4, account.getBalance());
+			pstmt.setString(1, account.getTitle());
+//			pstmt.setString(2, account.getToDo());
+//			pstmt.setString(3, account.getLocation());
+//			pstmt.setString(4, account.getDescribed());
+//			pstmt.setString(5, account.getYear());
+//			pstmt.setString(6, account.getWeek());
+//			pstmt.setString(7, account.getDay());
+//			pstmt.setString(8, account.getHours());
 			int result = pstmt.executeUpdate();
 			System.out.println("update result: " + result);
 		} catch (SQLException e) {
@@ -67,64 +70,54 @@ public class DayDao {
 		}
 	}
 	
-	public void update(BankAccount account){		
-		try {
-			sql = "update bank_tb set balance=? where accountnum=?";
-			pstmt = con.prepareStatement(sql);
-			pstmt.setInt(1, account.getBalance());
-			pstmt.setString(2, account.getAccountNum());
-			
-			int result = pstmt.executeUpdate();
-			System.out.println("update result: " + result);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		
-		
-	}
-
-	public void deleteAccount(){		
-		sql = "DROP table bank_tb";  // DROP TABLE 테이블이름;		
-		try {
-			pstmt = con.prepareStatement(sql);
-			int result = pstmt.executeUpdate();
-			System.out.println("");
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}		
-	}
+//	public void update(DayDao account){		
+//		try {
+//			sql = "update todo set ?=? where ?=?";
+//			pstmt = con.prepareStatement(sql);
+//			pstmt.setInt(1, account.getBalance());
+//			pstmt.setString(2, account.getAccountNum());
+//			
+//			int result = pstmt.executeUpdate();
+//			System.out.println("update result: " + result);
+//		} catch (SQLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}		
+//	}
 	
-	public void delete(String accountNum) {
-		try {
-			sql = "delete from bank_tb where accountnum=?";
-			pstmt = con.prepareStatement(sql);
-			pstmt.setString(1, accountNum);
-			int result = pstmt.executeUpdate();
-			System.out.println("delete result:" + result);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+//	public void delete(String accountNum) {
+//		try {
+//			sql = "delete from test where accountnum=?";
+//			pstmt = con.prepareStatement(sql);
+//			pstmt.setString(1, accountNum);
+//			int result = pstmt.executeUpdate();
+//			System.out.println("delete result:" + result);
+//		} catch (SQLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//	}
 
-	public BankAccount select(String accountNum) {
-		BankAccount result = null;
+	public Today select(String accountNum) {
+		Today result = null;
 		try {
 
-			sql = "select * from bank_tb where accountnum=?";
+			sql = "select * from todo where count=?";
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, accountNum);
 
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
-				result = new BankAccount();
-				result.setOwnerName(rs.getString(1));
-				result.setAccountNum(rs.getString(2));
-				result.setPassword(rs.getString(3));
-				result.setBalance(rs.getInt(4));
+				result = new Today();
+				result.setTitle(rs.getString(1));
+				result.setToDo(rs.getString(2));
+				result.setLocation(rs.getString(3));
+				result.setDescribed(rs.getString(4));
+				result.setYear(rs.getString(5));
+				result.setWeek(rs.getString(6));
+				result.setDay(rs.getString(7));
+				result.setHours(rs.getString(8));
+				
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -133,8 +126,8 @@ public class DayDao {
 		return result;
 	}
 	
-	public List<BankAccount> selectList(){
-		List<BankAccount> result = new ArrayList<>();
+	public List<Today> selectList(){
+		List<Today> result = new ArrayList<>();
 				
 		try {
 			sql = "select * from bank_tb";
@@ -142,11 +135,15 @@ public class DayDao {
 			
 			rs = stmt.executeQuery(sql);
 			while(rs.next()){
-				BankAccount account = new BankAccount();
-				account.setOwnerName(rs.getString(1));
-				account.setAccountNum(rs.getString(2));
-				account.setPassword(rs.getString(3));
-				account.setBalance(rs.getInt(4));
+				Today account = new Today();
+				account.setTitle(rs.getString(1));
+				account.setToDo(rs.getString(2));
+				account.setLocation(rs.getString(3));
+				account.setDescribed(rs.getString(4));
+				account.setYear(rs.getString(5));
+				account.setWeek(rs.getString(6));
+				account.setDay(rs.getString(7));
+				account.setHours(rs.getString(8));
 				
 				result.add(account);
 			}
