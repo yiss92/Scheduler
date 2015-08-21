@@ -35,6 +35,31 @@ public class Day {
 	private JTextField textField_22;
 	private JTextField textField_23;
 	private JTextField textField_24;
+	private JTextField textField_25;
+	private JTextField textField_26;
+	private JTextField textField_27;
+	private JTextField textField_28;
+	private JTextField textField_29;
+	private JTextField textField_30;
+	private JTextField textField_31;
+	private JTextField textField_32;
+	private JTextField textField_33;
+	private JTextField textField_34;
+	private JTextField textField_35;
+	private JTextField textField_36;
+	private JTextField textField_37;
+	private JTextField textField_38;
+	private JTextField textField_39;
+	private JTextField textField_40;
+	private JTextField textField_41;
+	private JTextField textField_42;
+	private JTextField textField_43;
+	private JTextField textField_44;
+	private JTextField textField_45;
+	private JTextField textField_46;
+	private JTextField textField_47;
+	private JTextField textField_48;
+	private JTextField textField_49;
 
 	/**
 	 * Launch the application.
@@ -62,6 +87,11 @@ public class Day {
 	/**
 	 * Initialize the contents of the frame.
 	 */
+	
+	public void modified(){
+		Modified modified = new Modified();
+		modified.setVisible(true);
+	}
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 795, 806);
@@ -74,24 +104,20 @@ public class Day {
 		DayDao daydao = new DayDao();
 
 		List<Today> contracts = daydao.selectList();
-		System.out.println(contracts.size());
-		
-		
+		System.out.println(contracts.size());		
 		
 		textField = new JTextField();
+		textField.setEditable(false);
 		textField.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				// Modified modified = new Modified();
-				// new Modified();
-
-				// modified.pack();
-				// modified.setVisible(true);
+				String temp = "to";				
+				daydao.select(temp);
 				ToDo todo = new ToDo();
 				todo.setVisible(true);
 			}
 		});
-		textField.setBounds(79, 37, 696, 21);
+		textField.setBounds(79, 37, 643, 21);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
 
@@ -104,14 +130,14 @@ public class Day {
 		frame.getContentPane().add(lblNewLabel_1);
 
 		textField_1 = new JTextField();
+		textField_1.setEditable(false);
 		textField_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();			
 			}
 		});
-		textField_1.setBounds(79, 65, 696, 21);
+		textField_1.setBounds(79, 65, 643, 21);
 		frame.getContentPane().add(textField_1);
 		textField_1.setColumns(10);
 
@@ -120,15 +146,15 @@ public class Day {
 		frame.getContentPane().add(label);
 
 		textField_2 = new JTextField();
+		textField_2.setEditable(false);
 		textField_2.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_2.setColumns(10);
-		textField_2.setBounds(79, 93, 696, 21);
+		textField_2.setBounds(79, 93, 643, 21);
 		frame.getContentPane().add(textField_2);
 
 		JLabel label_1 = new JLabel("\uC624\uC804 02\uC2DC");
@@ -136,15 +162,15 @@ public class Day {
 		frame.getContentPane().add(label_1);
 
 		textField_3 = new JTextField();
+		textField_3.setEditable(false);
 		textField_3.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_3.setColumns(10);
-		textField_3.setBounds(79, 121, 696, 21);
+		textField_3.setBounds(79, 121, 643, 21);
 		frame.getContentPane().add(textField_3);
 
 		JLabel label_2 = new JLabel("\uC624\uC804 03\uC2DC");
@@ -152,15 +178,15 @@ public class Day {
 		frame.getContentPane().add(label_2);
 
 		textField_4 = new JTextField();
+		textField_4.setEditable(false);
 		textField_4.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_4.setColumns(10);
-		textField_4.setBounds(79, 149, 696, 21);
+		textField_4.setBounds(79, 149, 643, 21);
 		frame.getContentPane().add(textField_4);
 
 		JLabel label_3 = new JLabel("\uC624\uC804 04\uC2DC");
@@ -168,15 +194,15 @@ public class Day {
 		frame.getContentPane().add(label_3);
 
 		textField_5 = new JTextField();
+		textField_5.setEditable(false);
 		textField_5.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_5.setColumns(10);
-		textField_5.setBounds(79, 177, 696, 21);
+		textField_5.setBounds(79, 177, 643, 21);
 		frame.getContentPane().add(textField_5);
 
 		JLabel label_4 = new JLabel("\uC624\uC804 05\uC2DC");
@@ -184,15 +210,15 @@ public class Day {
 		frame.getContentPane().add(label_4);
 
 		textField_6 = new JTextField();
+		textField_6.setEditable(false);
 		textField_6.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_6.setColumns(10);
-		textField_6.setBounds(79, 205, 696, 21);
+		textField_6.setBounds(79, 205, 643, 21);
 		frame.getContentPane().add(textField_6);
 
 		JLabel label_5 = new JLabel("\uC624\uC804 06\uC2DC");
@@ -200,15 +226,15 @@ public class Day {
 		frame.getContentPane().add(label_5);
 
 		textField_7 = new JTextField();
+		textField_7.setEditable(false);
 		textField_7.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_7.setColumns(10);
-		textField_7.setBounds(79, 233, 696, 21);
+		textField_7.setBounds(79, 233, 643, 21);
 		frame.getContentPane().add(textField_7);
 
 		JLabel label_6 = new JLabel("\uC624\uC804 07\uC2DC");
@@ -216,15 +242,15 @@ public class Day {
 		frame.getContentPane().add(label_6);
 
 		textField_8 = new JTextField();
+		textField_8.setEditable(false);
 		textField_8.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_8.setColumns(10);
-		textField_8.setBounds(79, 261, 696, 21);
+		textField_8.setBounds(79, 261, 643, 21);
 		frame.getContentPane().add(textField_8);
 
 		JLabel label_7 = new JLabel("\uC624\uC804 08\uC2DC");
@@ -232,15 +258,15 @@ public class Day {
 		frame.getContentPane().add(label_7);
 
 		textField_9 = new JTextField();
+		textField_9.setEditable(false);
 		textField_9.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_9.setColumns(10);
-		textField_9.setBounds(79, 289, 696, 21);
+		textField_9.setBounds(79, 289, 643, 21);
 		frame.getContentPane().add(textField_9);
 
 		JLabel label_8 = new JLabel("\uC624\uC804 09\uC2DC");
@@ -248,15 +274,15 @@ public class Day {
 		frame.getContentPane().add(label_8);
 
 		textField_10 = new JTextField();
+		textField_10.setEditable(false);
 		textField_10.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_10.setColumns(10);
-		textField_10.setBounds(79, 317, 696, 21);
+		textField_10.setBounds(79, 317, 643, 21);
 		frame.getContentPane().add(textField_10);
 
 		JLabel label_9 = new JLabel("\uC624\uC804 10\uC2DC");
@@ -264,15 +290,15 @@ public class Day {
 		frame.getContentPane().add(label_9);
 
 		textField_11 = new JTextField();
+		textField_11.setEditable(false);
 		textField_11.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();
 			}
 		});
 		textField_11.setColumns(10);
-		textField_11.setBounds(79, 345, 696, 21);
+		textField_11.setBounds(79, 345, 643, 21);
 		frame.getContentPane().add(textField_11);
 
 		JLabel label_10 = new JLabel("\uC624\uC804 11\uC2DC");
@@ -280,15 +306,15 @@ public class Day {
 		frame.getContentPane().add(label_10);
 
 		textField_12 = new JTextField();
+		textField_12.setEditable(false);
 		textField_12.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_12.setColumns(10);
-		textField_12.setBounds(79, 373, 696, 21);
+		textField_12.setBounds(79, 373, 643, 21);
 		frame.getContentPane().add(textField_12);
 
 		JLabel label_11 = new JLabel("\uC624\uD6C4 12\uC2DC");
@@ -296,15 +322,15 @@ public class Day {
 		frame.getContentPane().add(label_11);
 
 		textField_13 = new JTextField();
+		textField_13.setEditable(false);
 		textField_13.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_13.setColumns(10);
-		textField_13.setBounds(79, 401, 696, 21);
+		textField_13.setBounds(79, 401, 643, 21);
 		frame.getContentPane().add(textField_13);
 
 		JLabel label_12 = new JLabel("\uC624\uD6C4 01\uC2DC");
@@ -312,15 +338,15 @@ public class Day {
 		frame.getContentPane().add(label_12);
 
 		textField_14 = new JTextField();
+		textField_14.setEditable(false);
 		textField_14.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_14.setColumns(10);
-		textField_14.setBounds(79, 429, 696, 21);
+		textField_14.setBounds(79, 429, 643, 21);
 		frame.getContentPane().add(textField_14);
 
 		JLabel label_13 = new JLabel("\uC624\uD6C4 02\uC2DC");
@@ -328,27 +354,27 @@ public class Day {
 		frame.getContentPane().add(label_13);
 
 		textField_15 = new JTextField();
+		textField_15.setEditable(false);
 		textField_15.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_15.setColumns(10);
-		textField_15.setBounds(79, 457, 696, 21);
+		textField_15.setBounds(79, 457, 643, 21);
 		frame.getContentPane().add(textField_15);
 
 		textField_16 = new JTextField();
+		textField_16.setEditable(false);
 		textField_16.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_16.setColumns(10);
-		textField_16.setBounds(79, 485, 696, 21);
+		textField_16.setBounds(79, 485, 643, 21);
 		frame.getContentPane().add(textField_16);
 
 		JLabel label_14 = new JLabel("\uC624\uD6C4 03\uC2DC");
@@ -356,15 +382,15 @@ public class Day {
 		frame.getContentPane().add(label_14);
 
 		textField_17 = new JTextField();
+		textField_17.setEditable(false);
 		textField_17.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_17.setColumns(10);
-		textField_17.setBounds(79, 516, 696, 21);
+		textField_17.setBounds(79, 516, 643, 21);
 		frame.getContentPane().add(textField_17);
 
 		JLabel label_15 = new JLabel("\uC624\uD6C4 04\uC2DC");
@@ -372,15 +398,15 @@ public class Day {
 		frame.getContentPane().add(label_15);
 
 		textField_18 = new JTextField();
+		textField_18.setEditable(false);
 		textField_18.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_18.setColumns(10);
-		textField_18.setBounds(79, 547, 696, 21);
+		textField_18.setBounds(79, 547, 643, 21);
 		frame.getContentPane().add(textField_18);
 
 		JLabel label_16 = new JLabel("\uC624\uD6C4 05\uC2DC");
@@ -388,15 +414,15 @@ public class Day {
 		frame.getContentPane().add(label_16);
 
 		textField_19 = new JTextField();
+		textField_19.setEditable(false);
 		textField_19.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();	
 			}
 		});
 		textField_19.setColumns(10);
-		textField_19.setBounds(79, 578, 696, 21);
+		textField_19.setBounds(79, 578, 643, 21);
 		frame.getContentPane().add(textField_19);
 
 		JLabel label_17 = new JLabel("\uC624\uD6C4 06\uC2DC");
@@ -404,15 +430,15 @@ public class Day {
 		frame.getContentPane().add(label_17);
 
 		textField_20 = new JTextField();
+		textField_20.setEditable(false);
 		textField_20.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();
 			}
 		});
 		textField_20.setColumns(10);
-		textField_20.setBounds(79, 609, 696, 21);
+		textField_20.setBounds(79, 609, 643, 21);
 		frame.getContentPane().add(textField_20);
 
 		JLabel label_18 = new JLabel("\uC624\uD6C4 07\uC2DC");
@@ -420,15 +446,15 @@ public class Day {
 		frame.getContentPane().add(label_18);
 
 		textField_21 = new JTextField();
+		textField_21.setEditable(false);
 		textField_21.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();
 			}
 		});
 		textField_21.setColumns(10);
-		textField_21.setBounds(79, 640, 696, 21);
+		textField_21.setBounds(79, 640, 643, 21);
 		frame.getContentPane().add(textField_21);
 
 		JLabel label_19 = new JLabel("\uC624\uD6C4 08\uC2DC");
@@ -436,15 +462,15 @@ public class Day {
 		frame.getContentPane().add(label_19);
 
 		textField_22 = new JTextField();
+		textField_22.setEditable(false);
 		textField_22.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();
 			}
 		});
 		textField_22.setColumns(10);
-		textField_22.setBounds(79, 671, 696, 21);
+		textField_22.setBounds(79, 671, 643, 21);
 		frame.getContentPane().add(textField_22);
 
 		JLabel label_20 = new JLabel("\uC624\uD6C4 09\uC2DC");
@@ -452,15 +478,15 @@ public class Day {
 		frame.getContentPane().add(label_20);
 
 		textField_23 = new JTextField();
+		textField_23.setEditable(false);
 		textField_23.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();
 			}
 		});
 		textField_23.setColumns(10);
-		textField_23.setBounds(79, 702, 696, 21);
+		textField_23.setBounds(79, 702, 643, 21);
 		frame.getContentPane().add(textField_23);
 
 		JLabel label_21 = new JLabel("\uC624\uD6C4 10\uC2DC");
@@ -468,15 +494,15 @@ public class Day {
 		frame.getContentPane().add(label_21);
 
 		textField_24 = new JTextField();
+		textField_24.setEditable(false);
 		textField_24.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+				modified();
 			}
 		});
 		textField_24.setColumns(10);
-		textField_24.setBounds(79, 733, 696, 21);
+		textField_24.setBounds(79, 733, 643, 21);
 		frame.getContentPane().add(textField_24);
 
 		JLabel label_22 = new JLabel("\uC624\uD6C4 11\uC2DC");
@@ -862,34 +888,156 @@ public class Day {
 		default:
 			System.out.println("데이터가 없습니다.");
 			break;
-		}		
+		}	
 		
-
-		textField.setEditable(false);
-		textField_1.setEditable(false);
-		textField_2.setEditable(false);
-		textField_3.setEditable(false);
-		textField_4.setEditable(false);
-		textField_5.setEditable(false);
-		textField_6.setEditable(false);
-		textField_7.setEditable(false);
-		textField_8.setEditable(false);
-		textField_9.setEditable(false);
-		textField_10.setEditable(false);
-		textField_11.setEditable(false);
-		textField_12.setEditable(false);
-		textField_13.setEditable(false);
-		textField_14.setEditable(false);
-		textField_15.setEditable(false);
-		textField_16.setEditable(false);
-		textField_17.setEditable(false);
-		textField_18.setEditable(false);
-		textField_19.setEditable(false);
-		textField_20.setEditable(false);
-		textField_21.setEditable(false);
-		textField_22.setEditable(false);
-		textField_23.setEditable(false);
-		textField_24.setEditable(false);
-
-	}
+		textField_25 = new JTextField();
+		textField_25.setEditable(false);
+		textField_25.setBounds(734, 37, 45, 21);
+		frame.getContentPane().add(textField_25);
+		textField_25.setColumns(10);
+		
+		textField_26 = new JTextField();
+		textField_26.setEditable(false);
+		textField_26.setColumns(10);
+		textField_26.setBounds(734, 65, 45, 21);
+		frame.getContentPane().add(textField_26);
+		
+		textField_27 = new JTextField();
+		textField_27.setEditable(false);
+		textField_27.setColumns(10);
+		textField_27.setBounds(734, 93, 45, 21);
+		frame.getContentPane().add(textField_27);
+		
+		textField_28 = new JTextField();
+		textField_28.setEditable(false);
+		textField_28.setColumns(10);
+		textField_28.setBounds(734, 121, 45, 21);
+		frame.getContentPane().add(textField_28);
+		
+		textField_29 = new JTextField();
+		textField_29.setEditable(false);
+		textField_29.setColumns(10);
+		textField_29.setBounds(734, 149, 45, 21);
+		frame.getContentPane().add(textField_29);
+		
+		textField_30 = new JTextField();
+		textField_30.setEditable(false);
+		textField_30.setColumns(10);
+		textField_30.setBounds(734, 177, 45, 21);
+		frame.getContentPane().add(textField_30);
+		
+		textField_31 = new JTextField();
+		textField_31.setEditable(false);
+		textField_31.setColumns(10);
+		textField_31.setBounds(734, 205, 45, 21);
+		frame.getContentPane().add(textField_31);
+		
+		textField_32 = new JTextField();
+		textField_32.setEditable(false);
+		textField_32.setColumns(10);
+		textField_32.setBounds(734, 233, 45, 21);
+		frame.getContentPane().add(textField_32);
+		
+		textField_33 = new JTextField();
+		textField_33.setEditable(false);
+		textField_33.setColumns(10);
+		textField_33.setBounds(734, 261, 45, 21);
+		frame.getContentPane().add(textField_33);
+		
+		textField_34 = new JTextField();
+		textField_34.setEditable(false);
+		textField_34.setColumns(10);
+		textField_34.setBounds(734, 289, 45, 21);
+		frame.getContentPane().add(textField_34);
+		
+		textField_35 = new JTextField();
+		textField_35.setEditable(false);
+		textField_35.setColumns(10);
+		textField_35.setBounds(734, 317, 45, 21);
+		frame.getContentPane().add(textField_35);
+		
+		textField_36 = new JTextField();
+		textField_36.setEditable(false);
+		textField_36.setColumns(10);
+		textField_36.setBounds(734, 345, 45, 21);
+		frame.getContentPane().add(textField_36);
+		
+		textField_37 = new JTextField();
+		textField_37.setEditable(false);
+		textField_37.setColumns(10);
+		textField_37.setBounds(734, 373, 45, 21);
+		frame.getContentPane().add(textField_37);
+		
+		textField_38 = new JTextField();
+		textField_38.setEditable(false);
+		textField_38.setColumns(10);
+		textField_38.setBounds(734, 401, 45, 21);
+		frame.getContentPane().add(textField_38);
+		
+		textField_39 = new JTextField();
+		textField_39.setEditable(false);
+		textField_39.setColumns(10);
+		textField_39.setBounds(734, 429, 45, 21);
+		frame.getContentPane().add(textField_39);
+		
+		textField_40 = new JTextField();
+		textField_40.setEditable(false);
+		textField_40.setColumns(10);
+		textField_40.setBounds(734, 457, 45, 21);
+		frame.getContentPane().add(textField_40);
+		
+		textField_41 = new JTextField();
+		textField_41.setEditable(false);
+		textField_41.setColumns(10);
+		textField_41.setBounds(734, 485, 45, 21);
+		frame.getContentPane().add(textField_41);
+		
+		textField_42 = new JTextField();
+		textField_42.setEditable(false);
+		textField_42.setColumns(10);
+		textField_42.setBounds(734, 516, 45, 21);
+		frame.getContentPane().add(textField_42);
+		
+		textField_43 = new JTextField();
+		textField_43.setEditable(false);
+		textField_43.setColumns(10);
+		textField_43.setBounds(734, 547, 45, 21);
+		frame.getContentPane().add(textField_43);
+		
+		textField_44 = new JTextField();
+		textField_44.setEditable(false);
+		textField_44.setColumns(10);
+		textField_44.setBounds(734, 578, 45, 21);
+		frame.getContentPane().add(textField_44);
+		
+		textField_45 = new JTextField();
+		textField_45.setEditable(false);
+		textField_45.setColumns(10);
+		textField_45.setBounds(734, 609, 45, 21);
+		frame.getContentPane().add(textField_45);
+		
+		textField_46 = new JTextField();
+		textField_46.setEditable(false);
+		textField_46.setColumns(10);
+		textField_46.setBounds(734, 640, 45, 21);
+		frame.getContentPane().add(textField_46);
+		
+		textField_47 = new JTextField();
+		textField_47.setEditable(false);
+		textField_47.setColumns(10);
+		textField_47.setBounds(734, 671, 45, 21);
+		frame.getContentPane().add(textField_47);
+		
+		textField_48 = new JTextField();
+		textField_48.setEditable(false);
+		textField_48.setColumns(10);
+		textField_48.setBounds(734, 702, 45, 21);
+		frame.getContentPane().add(textField_48);
+		
+		textField_49 = new JTextField();
+		textField_49.setEditable(false);
+		textField_49.setColumns(10);
+		textField_49.setBounds(734, 733, 45, 21);
+		frame.getContentPane().add(textField_49);
+	}	
 }

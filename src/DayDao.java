@@ -109,18 +109,18 @@ public class DayDao {
 //		}		
 //	}
 	
-//	public void delete(String accountNum) {
-//		try {
-//			sql = "delete from test where accountnum=?";
-//			pstmt = con.prepareStatement(sql);
-//			pstmt.setString(1, accountNum);
-//			int result = pstmt.executeUpdate();
-//			System.out.println("delete result:" + result);
-//		} catch (SQLException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//	}
+	public void delete(String accountNum) {
+		try {
+			sql = "delete from todo where either=?";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, accountNum);
+			int result = pstmt.executeUpdate();
+			System.out.println("delete result:" + result);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 	public Today select(String accountNum) {
 		Today result = null;
