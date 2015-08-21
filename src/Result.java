@@ -31,7 +31,7 @@ public class Result extends JDialog {
 		setBounds(100, 100, 450, 370);
 		getContentPane().setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("tital");
+		JLabel lblNewLabel = new JLabel("title");
 		lblNewLabel.setFont(new Font("±¼¸²", Font.BOLD, 15));
 		lblNewLabel.setBounds(40, 10, 57, 15);
 		getContentPane().add(lblNewLabel);

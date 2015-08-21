@@ -33,7 +33,7 @@ public class Modified extends JDialog {
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(null);
 		{
-			JButton btnNewButton = new JButton("\uC218\uC815");
+			JButton btnNewButton = new JButton("\uC800\uC7A5");
 			btnNewButton.setBounds(79, 10, 99, 25);
 			getContentPane().add(btnNewButton);
 		}

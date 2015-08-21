@@ -5,6 +5,7 @@ import javax.swing.JTextField;
 import javax.swing.JLabel;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.sql.SQLException;
 import java.util.List;
 
 public class Day {
@@ -87,11 +88,19 @@ public class Day {
 	/**
 	 * Initialize the contents of the frame.
 	 */
-	
-	public void modified(){
+
+	//yiss92
+	public void modified() {
 		Modified modified = new Modified();
 		modified.setVisible(true);
 	}
+
+	public void doingtodo() {
+
+		ToDo todo = new ToDo();
+		todo.setVisible(true);
+	}
+
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 795, 806);
@@ -100,21 +109,34 @@ public class Day {
 
 		// textField.setText("test");
 		// yiss92
-		//Day day = new Day();
+		// Day day = new Day();
 		DayDao daydao = new DayDao();
 
 		List<Today> contracts = daydao.selectList();
-		System.out.println(contracts.size());		
-		
+		System.out.println(contracts.size());
+
 		textField = new JTextField();
 		textField.setEditable(false);
 		textField.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				String temp = "to";				
+				//yiss92
+				String temp = "to";
 				daydao.select(temp);
-				ToDo todo = new ToDo();
-				todo.setVisible(true);
+
+				try {
+					if (daydao.getRs().next() != false) {
+						modified();
+					} else {
+						doingtodo();
+
+					}
+
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
 			}
 		});
 		textField.setBounds(79, 37, 643, 21);
@@ -134,7 +156,7 @@ public class Day {
 		textField_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				modified();			
+				modified();
 			}
 		});
 		textField_1.setBounds(79, 65, 643, 21);
@@ -150,7 +172,7 @@ public class Day {
 		textField_2.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				modified();	
+				modified();
 			}
 		});
 		textField_2.setColumns(10);
@@ -166,7 +188,7 @@ public class Day {
 		textField_3.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				modified();	
+				modified();
 			}
 		});
 		textField_3.setColumns(10);
@@ -182,7 +204,7 @@ public class Day {
 		textField_4.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				modified();	
+				modified();
 			}
 		});
 		textField_4.setColumns(10);
@@ -198,7 +220,7 @@ public class Day {
 		textField_5.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				modified();	
+				modified();
 			}
 		});
 		textField_5.setColumns(10);
@@ -214,7 +236,7 @@ public class Day {
 		textField_6.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				modified();	
+				modified();
 			}
 		});
 		textField_6.setColumns(10);
@@ -230,7 +252,7 @@ public class Day {
 		textField_7.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				modified();	
+				modified();
 			}
 		});
 		textField_7.setColumns(10);
@@ -246,7 +268,7 @@ public class Day {
 		textField_8.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				modified();	
+				modified();
 			}
 		});
 		textField_8.setColumns(10);
@@ -262,7 +284,7 @@ public class Day {
 		textField_9.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				modified();	
+				modified();
 			}
 		});
 		textField_9.setColumns(10);
@@ -278,7 +300,7 @@ public class Day {
 		textField_10.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				modified();	
+				modified();
 			}
 		});
 		textField_10.setColumns(10);
@@ -310,7 +332,7 @@ public class Day {
 		textField_12.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				modified();	
+				modified();
 			}
 		});
 		textField_12.setColumns(10);
@@ -326,7 +348,7 @@ public class Day {
 		textField_13.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				modified();	
+				modified();
 			}
 		});
 		textField_13.setColumns(10);
@@ -342,7 +364,7 @@ public class Day {
 		textField_14.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				modified();	
+				modified();
 			}
 		});
 		textField_14.setColumns(10);
@@ -358,7 +380,7 @@ public class Day {
 		textField_15.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				modified();	
+				modified();
 			}
 		});
 		textField_15.setColumns(10);
@@ -370,7 +392,7 @@ public class Day {
 		textField_16.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				modified();	
+				modified();
 			}
 		});
 		textField_16.setColumns(10);
@@ -386,7 +408,7 @@ public class Day {
 		textField_17.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				modified();	
+				modified();
 			}
 		});
 		textField_17.setColumns(10);
@@ -402,7 +424,7 @@ public class Day {
 		textField_18.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				modified();	
+				modified();
 			}
 		});
 		textField_18.setColumns(10);
@@ -418,7 +440,7 @@ public class Day {
 		textField_19.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				modified();	
+				modified();
 			}
 		});
 		textField_19.setColumns(10);
@@ -508,40 +530,40 @@ public class Day {
 		JLabel label_22 = new JLabel("\uC624\uD6C4 11\uC2DC");
 		label_22.setBounds(12, 736, 57, 15);
 		frame.getContentPane().add(label_22);
-		
-		//yiss92
-		//.getClass().textField.setText(contracts.get(3).getToDo());
+
+		// yiss92
+		// .getClass().textField.setText(contracts.get(3).getToDo());
 		switch (contracts.size()) {
 		case 1:
 			textField_1.setText(contracts.get(0).getToDo());
 			break;
-			
+
 		case 2:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
 			break;
-			
+
 		case 3:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());			
+			textField_3.setText(contracts.get(2).getToDo());
 			break;
-			
+
 		case 4:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
 			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());			
+			textField_4.setText(contracts.get(3).getToDo());
 			break;
-			
+
 		case 5:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
 			textField_3.setText(contracts.get(2).getToDo());
 			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());	
+			textField_5.setText(contracts.get(4).getToDo());
 			break;
-			
+
 		case 6:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -550,7 +572,7 @@ public class Day {
 			textField_5.setText(contracts.get(4).getToDo());
 			textField_6.setText(contracts.get(5).getToDo());
 			break;
-			
+
 		case 7:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -560,7 +582,7 @@ public class Day {
 			textField_6.setText(contracts.get(5).getToDo());
 			textField_7.setText(contracts.get(6).getToDo());
 			break;
-			
+
 		case 8:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -571,7 +593,7 @@ public class Day {
 			textField_7.setText(contracts.get(6).getToDo());
 			textField_8.setText(contracts.get(7).getToDo());
 			break;
-			
+
 		case 9:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -583,7 +605,7 @@ public class Day {
 			textField_8.setText(contracts.get(7).getToDo());
 			textField_9.setText(contracts.get(8).getToDo());
 			break;
-			
+
 		case 10:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -596,7 +618,7 @@ public class Day {
 			textField_9.setText(contracts.get(8).getToDo());
 			textField_10.setText(contracts.get(9).getToDo());
 			break;
-			
+
 		case 11:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -610,7 +632,7 @@ public class Day {
 			textField_10.setText(contracts.get(9).getToDo());
 			textField_11.setText(contracts.get(10).getToDo());
 			break;
-			
+
 		case 12:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -625,7 +647,7 @@ public class Day {
 			textField_11.setText(contracts.get(10).getToDo());
 			textField_12.setText(contracts.get(11).getToDo());
 			break;
-			
+
 		case 13:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -641,7 +663,7 @@ public class Day {
 			textField_12.setText(contracts.get(11).getToDo());
 			textField_13.setText(contracts.get(12).getToDo());
 			break;
-			
+
 		case 14:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -658,7 +680,7 @@ public class Day {
 			textField_13.setText(contracts.get(12).getToDo());
 			textField_14.setText(contracts.get(13).getToDo());
 			break;
-			
+
 		case 15:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -676,7 +698,7 @@ public class Day {
 			textField_14.setText(contracts.get(13).getToDo());
 			textField_15.setText(contracts.get(14).getToDo());
 			break;
-			
+
 		case 16:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -695,7 +717,7 @@ public class Day {
 			textField_15.setText(contracts.get(14).getToDo());
 			textField_16.setText(contracts.get(15).getToDo());
 			break;
-			
+
 		case 17:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -715,7 +737,7 @@ public class Day {
 			textField_16.setText(contracts.get(15).getToDo());
 			textField_17.setText(contracts.get(16).getToDo());
 			break;
-			
+
 		case 18:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -736,7 +758,7 @@ public class Day {
 			textField_17.setText(contracts.get(16).getToDo());
 			textField_18.setText(contracts.get(17).getToDo());
 			break;
-			
+
 		case 19:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -758,7 +780,7 @@ public class Day {
 			textField_18.setText(contracts.get(17).getToDo());
 			textField_19.setText(contracts.get(18).getToDo());
 			break;
-			
+
 		case 20:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -781,7 +803,7 @@ public class Day {
 			textField_19.setText(contracts.get(18).getToDo());
 			textField_20.setText(contracts.get(19).getToDo());
 			break;
-		
+
 		case 21:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -805,7 +827,7 @@ public class Day {
 			textField_20.setText(contracts.get(19).getToDo());
 			textField_21.setText(contracts.get(20).getToDo());
 			break;
-		
+
 		case 22:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -830,7 +852,7 @@ public class Day {
 			textField_21.setText(contracts.get(20).getToDo());
 			textField_22.setText(contracts.get(21).getToDo());
 			break;
-			
+
 		case 23:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -856,7 +878,7 @@ public class Day {
 			textField_22.setText(contracts.get(21).getToDo());
 			textField_23.setText(contracts.get(22).getToDo());
 			break;
-			
+
 		case 24:
 			textField_1.setText(contracts.get(0).getToDo());
 			textField_2.setText(contracts.get(1).getToDo());
@@ -883,161 +905,167 @@ public class Day {
 			textField_23.setText(contracts.get(22).getToDo());
 			textField_24.setText(contracts.get(23).getToDo());
 			break;
-	
 
 		default:
 			System.out.println("데이터가 없습니다.");
 			break;
-		}	
-		
+		}
+
 		textField_25 = new JTextField();
+		textField_25.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				//yiss92
+				//조회후 값이 있다면 저장값 보여주고 수정가능하면 수정하기
+			}
+		});
 		textField_25.setEditable(false);
 		textField_25.setBounds(734, 37, 45, 21);
 		frame.getContentPane().add(textField_25);
 		textField_25.setColumns(10);
-		
+
 		textField_26 = new JTextField();
 		textField_26.setEditable(false);
 		textField_26.setColumns(10);
 		textField_26.setBounds(734, 65, 45, 21);
 		frame.getContentPane().add(textField_26);
-		
+
 		textField_27 = new JTextField();
 		textField_27.setEditable(false);
 		textField_27.setColumns(10);
 		textField_27.setBounds(734, 93, 45, 21);
 		frame.getContentPane().add(textField_27);
-		
+
 		textField_28 = new JTextField();
 		textField_28.setEditable(false);
 		textField_28.setColumns(10);
 		textField_28.setBounds(734, 121, 45, 21);
 		frame.getContentPane().add(textField_28);
-		
+
 		textField_29 = new JTextField();
 		textField_29.setEditable(false);
 		textField_29.setColumns(10);
 		textField_29.setBounds(734, 149, 45, 21);
 		frame.getContentPane().add(textField_29);
-		
+
 		textField_30 = new JTextField();
 		textField_30.setEditable(false);
 		textField_30.setColumns(10);
 		textField_30.setBounds(734, 177, 45, 21);
 		frame.getContentPane().add(textField_30);
-		
+
 		textField_31 = new JTextField();
 		textField_31.setEditable(false);
 		textField_31.setColumns(10);
 		textField_31.setBounds(734, 205, 45, 21);
 		frame.getContentPane().add(textField_31);
-		
+
 		textField_32 = new JTextField();
 		textField_32.setEditable(false);
 		textField_32.setColumns(10);
 		textField_32.setBounds(734, 233, 45, 21);
 		frame.getContentPane().add(textField_32);
-		
+
 		textField_33 = new JTextField();
 		textField_33.setEditable(false);
 		textField_33.setColumns(10);
 		textField_33.setBounds(734, 261, 45, 21);
 		frame.getContentPane().add(textField_33);
-		
+
 		textField_34 = new JTextField();
 		textField_34.setEditable(false);
 		textField_34.setColumns(10);
 		textField_34.setBounds(734, 289, 45, 21);
 		frame.getContentPane().add(textField_34);
-		
+
 		textField_35 = new JTextField();
 		textField_35.setEditable(false);
 		textField_35.setColumns(10);
 		textField_35.setBounds(734, 317, 45, 21);
 		frame.getContentPane().add(textField_35);
-		
+
 		textField_36 = new JTextField();
 		textField_36.setEditable(false);
 		textField_36.setColumns(10);
 		textField_36.setBounds(734, 345, 45, 21);
 		frame.getContentPane().add(textField_36);
-		
+
 		textField_37 = new JTextField();
 		textField_37.setEditable(false);
 		textField_37.setColumns(10);
 		textField_37.setBounds(734, 373, 45, 21);
 		frame.getContentPane().add(textField_37);
-		
+
 		textField_38 = new JTextField();
 		textField_38.setEditable(false);
 		textField_38.setColumns(10);
 		textField_38.setBounds(734, 401, 45, 21);
 		frame.getContentPane().add(textField_38);
-		
+
 		textField_39 = new JTextField();
 		textField_39.setEditable(false);
 		textField_39.setColumns(10);
 		textField_39.setBounds(734, 429, 45, 21);
 		frame.getContentPane().add(textField_39);
-		
+
 		textField_40 = new JTextField();
 		textField_40.setEditable(false);
 		textField_40.setColumns(10);
 		textField_40.setBounds(734, 457, 45, 21);
 		frame.getContentPane().add(textField_40);
-		
+
 		textField_41 = new JTextField();
 		textField_41.setEditable(false);
 		textField_41.setColumns(10);
 		textField_41.setBounds(734, 485, 45, 21);
 		frame.getContentPane().add(textField_41);
-		
+
 		textField_42 = new JTextField();
 		textField_42.setEditable(false);
 		textField_42.setColumns(10);
 		textField_42.setBounds(734, 516, 45, 21);
 		frame.getContentPane().add(textField_42);
-		
+
 		textField_43 = new JTextField();
 		textField_43.setEditable(false);
 		textField_43.setColumns(10);
 		textField_43.setBounds(734, 547, 45, 21);
 		frame.getContentPane().add(textField_43);
-		
+
 		textField_44 = new JTextField();
 		textField_44.setEditable(false);
 		textField_44.setColumns(10);
 		textField_44.setBounds(734, 578, 45, 21);
 		frame.getContentPane().add(textField_44);
-		
+
 		textField_45 = new JTextField();
 		textField_45.setEditable(false);
 		textField_45.setColumns(10);
 		textField_45.setBounds(734, 609, 45, 21);
 		frame.getContentPane().add(textField_45);
-		
+
 		textField_46 = new JTextField();
 		textField_46.setEditable(false);
 		textField_46.setColumns(10);
 		textField_46.setBounds(734, 640, 45, 21);
 		frame.getContentPane().add(textField_46);
-		
+
 		textField_47 = new JTextField();
 		textField_47.setEditable(false);
 		textField_47.setColumns(10);
 		textField_47.setBounds(734, 671, 45, 21);
 		frame.getContentPane().add(textField_47);
-		
+
 		textField_48 = new JTextField();
 		textField_48.setEditable(false);
 		textField_48.setColumns(10);
 		textField_48.setBounds(734, 702, 45, 21);
 		frame.getContentPane().add(textField_48);
-		
+
 		textField_49 = new JTextField();
 		textField_49.setEditable(false);
 		textField_49.setColumns(10);
 		textField_49.setBounds(734, 733, 45, 21);
 		frame.getContentPane().add(textField_49);
-	}	
+	}
 }

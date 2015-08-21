@@ -208,6 +208,16 @@ public class DayDao {
 			}
 		}
 	}
+
+	public ResultSet getRs() {
+		return rs;
+	}
+
+	public void setRs(ResultSet rs) {
+		this.rs = rs;
+	}
+	
+	
 	
 	
 
