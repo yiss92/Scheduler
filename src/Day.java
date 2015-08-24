@@ -1,5 +1,6 @@
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.Font;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -49,6 +50,10 @@ public class Day {
 	private JLabel lblNewLabel_4;
 	private JLabel lblNewLabel_5;
 	private JLabel lblNewLabel_6;
+	
+	private Today today = null;
+	private DayDao daydao = null;
+	
 
 	/**
 	 * Launch the application.
@@ -83,46 +88,44 @@ public class Day {
 		
 		modified.setBounds(100, 100, 450, 300);
 		modified.getContentPane().setLayout(null);
-		{
-			JButton btnNewButton = new JButton("\uC800\uC7A5");
-			btnNewButton.setBounds(79, 10, 99, 25);
-			modified.getContentPane().add(btnNewButton);
-		}
-		{
-			JButton btnNewButton_1 = new JButton("\uC0AD\uC81C");
-			btnNewButton_1.setBounds(209, 10, 99, 25);
-			modified.getContentPane().add(btnNewButton_1);
-		}
-		{
-			textField = new JTextField();
-			textField.setBounds(79, 61, 317, 21);
-			modified.getContentPane().add(textField);
-			textField.setColumns(10);
-		}
-		{
-			JLabel lblNewLabel = new JLabel("\uC138\uBD80\uC815\uBCF4");
-			lblNewLabel.setBounds(64, 121, 57, 15);
-			modified.getContentPane().add(lblNewLabel);
-		}
-		{
-			JLabel lblNewLabel_1 = new JLabel("\uC7A5\uC18C");
-			lblNewLabel_1.setBounds(74, 146, 57, 15);
-			modified.getContentPane().add(lblNewLabel_1);
-		}
-		{
-			textField_1 = new JTextField();
-			textField_1.setBounds(133, 143, 263, 21);
-			modified.getContentPane().add(textField_1);
-			textField_1.setColumns(10);
-		}
-		{
-			JLabel lblNewLabel_2 = new JLabel("\uC124\uBA85");
-			lblNewLabel_2.setBounds(64, 183, 57, 15);
-			modified.getContentPane().add(lblNewLabel_2);
-		}
+		
+		JButton button = new JButton("\uC218\uC815");
+		button.setFont(new Font("±¼¸²", Font.PLAIN, 12));
+		button.setBounds(77, 10, 99, 25);
+		modified.getContentPane().add(button);
+		
+		JButton button_1 = new JButton("\uC0AD\uC81C");
+		button_1.setFont(new Font("±¼¸²", Font.PLAIN, 12));
+		button_1.setBounds(207, 10, 99, 25);
+		modified.getContentPane().add(button_1);
+		
+		textField = new JTextField();
+		textField.setColumns(10);
+		textField.setBounds(77, 61, 317, 21);
+		modified.getContentPane().add(textField);
+		
+		JLabel label = new JLabel("\uC138\uBD80\uC815\uBCF4");
+		label.setFont(new Font("±¼¸²", Font.PLAIN, 12));
+		label.setBounds(62, 121, 57, 15);
+		modified.getContentPane().add(label);
+		
+		JLabel label_1 = new JLabel("\uC7A5\uC18C");
+		label_1.setFont(new Font("±¼¸²", Font.PLAIN, 12));
+		label_1.setBounds(72, 146, 57, 15);
+		modified.getContentPane().add(label_1);
+		
+		textField_1 = new JTextField();
+		textField_1.setColumns(10);
+		textField_1.setBounds(131, 143, 263, 21);
+		modified.getContentPane().add(textField_1);
+		
+		JLabel label_2 = new JLabel("\uC124\uBA85");
+		label_2.setFont(new Font("±¼¸²", Font.PLAIN, 12));
+		label_2.setBounds(62, 183, 57, 15);
+		modified.getContentPane().add(label_2);
 		
 		JTextArea textArea = new JTextArea();
-		textArea.setBounds(79, 208, 317, 43);
+		textArea.setBounds(77, 208, 317, 43);
 		modified.getContentPane().add(textArea);				
 	
 		modified.setVisible(true);
@@ -135,12 +138,11 @@ public class Day {
 		JTextField textField;
 		
 		todo.setBounds(100, 100, 450, 300);
-		todo.getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		todo.getContentPane().add(contentPanel, BorderLayout.CENTER);
 		//yiss92
-		Today today = new Today();
-		DayDao daydao = new DayDao();
+		today = new Today();
+		daydao = new DayDao();
 		
 		contentPanel.setLayout(null);
 		{
@@ -210,6 +212,7 @@ public class Day {
 		List<Today> contracts = daydao.selectList();
 		System.out.println(contracts.size());
 
+		String temp="";
 		textField = new JTextField();
 		textField.setEditable(false);
 		textField.addMouseListener(new MouseAdapter() {
@@ -217,11 +220,15 @@ public class Day {
 			public void mouseClicked(MouseEvent arg0) {
 				//yiss92
 				//String temp = " ";
-				daydao.selecteither();
+				//Today today = new Today();
+				today = daydao.selecteither();
                 
 				try {
 					if (daydao.getRs().next() != false) {
 						modified();
+						//textField.setText(today.getTitle());
+						//temp = today.getTitle();
+						//System.out.println(today.getTitle());
 					} else {
 						doingtodo();
 
@@ -233,7 +240,11 @@ public class Day {
 				}
 
 			}
+			
+			
 		});
+		
+		
 		textField.setBounds(79, 37, 643, 21);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);

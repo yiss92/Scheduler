@@ -156,7 +156,7 @@ public class DayDao {
 		Today result = null;
 		try {
 
-			sql = "select * from todo where either=''";
+			sql = "SELECT * FROM todo WHERE either IS NULL OR either = '';";
 			pstmt = con.prepareStatement(sql);
 			//pstmt.setString(1, accountNum);
 
