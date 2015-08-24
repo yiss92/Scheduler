@@ -212,7 +212,8 @@ public class Day {
 		List<Today> contracts = daydao.selectList();
 		System.out.println(contracts.size());
 
-		String temp="";
+		//String temp="";
+		today = daydao.selecteither();
 		textField = new JTextField();
 		textField.setEditable(false);
 		textField.addMouseListener(new MouseAdapter() {
@@ -221,7 +222,7 @@ public class Day {
 				//yiss92
 				//String temp = " ";
 				//Today today = new Today();
-				today = daydao.selecteither();
+				
                 
 				try {
 					if (daydao.getRs().next() != false) {
@@ -243,7 +244,7 @@ public class Day {
 			
 			
 		});
-		
+		textField.setText(today.getTitle());
 		
 		textField.setBounds(79, 37, 643, 21);
 		frame.getContentPane().add(textField);
