@@ -42,31 +42,13 @@ public class Day {
 	private JTextField textField_22;
 	private JTextField textField_23;
 	private JTextField textField_24;
-	private JTextField textField_25;
-	private JTextField textField_26;
-	private JTextField textField_27;
-	private JTextField textField_28;
-	private JTextField textField_29;
-	private JTextField textField_30;
-	private JTextField textField_31;
-	private JTextField textField_32;
-	private JTextField textField_33;
-	private JTextField textField_34;
-	private JTextField textField_35;
-	private JTextField textField_36;
-	private JTextField textField_37;
-	private JTextField textField_38;
-	private JTextField textField_39;
-	private JTextField textField_40;
-	private JTextField textField_41;
-	private JTextField textField_42;
-	private JTextField textField_43;
-	private JTextField textField_44;
-	private JTextField textField_45;
-	private JTextField textField_46;
-	private JTextField textField_47;
-	private JTextField textField_48;
-	private JTextField textField_49;
+	private JButton btnNewButton_2;
+	private JButton button;
+	private JButton button_1;
+	private JLabel lblNewLabel_3;
+	private JLabel lblNewLabel_4;
+	private JLabel lblNewLabel_5;
+	private JLabel lblNewLabel_6;
 
 	/**
 	 * Launch the application.
@@ -234,9 +216,9 @@ public class Day {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				//yiss92
-				String temp = " ";
-				daydao.select(temp);
-
+				//String temp = " ";
+				daydao.selecteither();
+                
 				try {
 					if (daydao.getRs().next() != false) {
 						modified();
@@ -257,7 +239,7 @@ public class Day {
 		textField.setColumns(10);
 
 		JLabel lblNewLabel = new JLabel("\uC694\uC77C");
-		lblNewLabel.setBounds(103, 12, 292, 15);
+		lblNewLabel.setBounds(377, 12, 72, 15);
 		frame.getContentPane().add(lblNewLabel);
 
 		JLabel lblNewLabel_1 = new JLabel("\uC624\uC804 12\uC2DC");
@@ -643,542 +625,413 @@ public class Day {
 		JLabel label_22 = new JLabel("\uC624\uD6C4 11\uC2DC");
 		label_22.setBounds(12, 736, 57, 15);
 		frame.getContentPane().add(label_22);
+		
+		btnNewButton_2 = new JButton("\uC77C");
+		btnNewButton_2.setBounds(489, 6, 63, 25);
+		frame.getContentPane().add(btnNewButton_2);
+		
+		button = new JButton("\uC8FC");
+		button.setBounds(565, 6, 63, 25);
+		frame.getContentPane().add(button);
+		
+		button_1 = new JButton("\uC6D4");
+		button_1.setBounds(644, 7, 63, 25);
+		frame.getContentPane().add(button_1);
+		
+		lblNewLabel_3 = new JLabel("\uB144");
+		lblNewLabel_3.setBounds(80, 12, 57, 15);
+		frame.getContentPane().add(lblNewLabel_3);
+		
+		lblNewLabel_4 = new JLabel("\uB144");
+		lblNewLabel_4.setBounds(149, 12, 57, 15);
+		frame.getContentPane().add(lblNewLabel_4);
+		
+		lblNewLabel_5 = new JLabel("\uC77C");
+		lblNewLabel_5.setBounds(299, 13, 26, 15);
+		frame.getContentPane().add(lblNewLabel_5);
+		
+		lblNewLabel_6 = new JLabel("\uC6D4");
+		lblNewLabel_6.setBounds(230, 12, 57, 15);
+		frame.getContentPane().add(lblNewLabel_6);
 
 		// yiss92
-		// .getClass().textField.setText(contracts.get(3).getToDo());
+		// .getClass().textField.setText(contracts.get(3).getTitle());
 		switch (contracts.size()) {
 		case 1:
-			textField_1.setText(contracts.get(0).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
 			break;
 
 		case 2:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
 			break;
 
 		case 3:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
+			textField_1.setText(contracts.get(1).getTitle());
+			textField_2.setText(contracts.get(2).getTitle());
+			textField_3.setText(contracts.get(3).getTitle());
 			break;
 
 		case 4:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
 			break;
 
 		case 5:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
 			break;
 
 		case 6:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
 			break;
 
 		case 7:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
 			break;
 
 		case 8:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
 			break;
 
 		case 9:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
-			textField_9.setText(contracts.get(8).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
+			textField_9.setText(contracts.get(8).getTitle());
 			break;
 
 		case 10:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
-			textField_9.setText(contracts.get(8).getToDo());
-			textField_10.setText(contracts.get(9).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
+			textField_9.setText(contracts.get(8).getTitle());
+			textField_10.setText(contracts.get(9).getTitle());
 			break;
 
 		case 11:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
-			textField_9.setText(contracts.get(8).getToDo());
-			textField_10.setText(contracts.get(9).getToDo());
-			textField_11.setText(contracts.get(10).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
+			textField_9.setText(contracts.get(8).getTitle());
+			textField_10.setText(contracts.get(9).getTitle());
+			textField_11.setText(contracts.get(10).getTitle());
 			break;
 
 		case 12:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
-			textField_9.setText(contracts.get(8).getToDo());
-			textField_10.setText(contracts.get(9).getToDo());
-			textField_11.setText(contracts.get(10).getToDo());
-			textField_12.setText(contracts.get(11).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
+			textField_9.setText(contracts.get(8).getTitle());
+			textField_10.setText(contracts.get(9).getTitle());
+			textField_11.setText(contracts.get(10).getTitle());
+			textField_12.setText(contracts.get(11).getTitle());
 			break;
 
 		case 13:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
-			textField_9.setText(contracts.get(8).getToDo());
-			textField_10.setText(contracts.get(9).getToDo());
-			textField_11.setText(contracts.get(10).getToDo());
-			textField_12.setText(contracts.get(11).getToDo());
-			textField_13.setText(contracts.get(12).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
+			textField_9.setText(contracts.get(8).getTitle());
+			textField_10.setText(contracts.get(9).getTitle());
+			textField_11.setText(contracts.get(10).getTitle());
+			textField_12.setText(contracts.get(11).getTitle());
+			textField_13.setText(contracts.get(12).getTitle());
 			break;
 
 		case 14:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
-			textField_9.setText(contracts.get(8).getToDo());
-			textField_10.setText(contracts.get(9).getToDo());
-			textField_11.setText(contracts.get(10).getToDo());
-			textField_12.setText(contracts.get(11).getToDo());
-			textField_13.setText(contracts.get(12).getToDo());
-			textField_14.setText(contracts.get(13).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
+			textField_9.setText(contracts.get(8).getTitle());
+			textField_10.setText(contracts.get(9).getTitle());
+			textField_11.setText(contracts.get(10).getTitle());
+			textField_12.setText(contracts.get(11).getTitle());
+			textField_13.setText(contracts.get(12).getTitle());
+			textField_14.setText(contracts.get(13).getTitle());
 			break;
 
 		case 15:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
-			textField_9.setText(contracts.get(8).getToDo());
-			textField_10.setText(contracts.get(9).getToDo());
-			textField_11.setText(contracts.get(10).getToDo());
-			textField_12.setText(contracts.get(11).getToDo());
-			textField_13.setText(contracts.get(12).getToDo());
-			textField_14.setText(contracts.get(13).getToDo());
-			textField_15.setText(contracts.get(14).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
+			textField_9.setText(contracts.get(8).getTitle());
+			textField_10.setText(contracts.get(9).getTitle());
+			textField_11.setText(contracts.get(10).getTitle());
+			textField_12.setText(contracts.get(11).getTitle());
+			textField_13.setText(contracts.get(12).getTitle());
+			textField_14.setText(contracts.get(13).getTitle());
+			textField_15.setText(contracts.get(14).getTitle());
 			break;
 
 		case 16:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
-			textField_9.setText(contracts.get(8).getToDo());
-			textField_10.setText(contracts.get(9).getToDo());
-			textField_11.setText(contracts.get(10).getToDo());
-			textField_12.setText(contracts.get(11).getToDo());
-			textField_13.setText(contracts.get(12).getToDo());
-			textField_14.setText(contracts.get(13).getToDo());
-			textField_15.setText(contracts.get(14).getToDo());
-			textField_16.setText(contracts.get(15).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
+			textField_9.setText(contracts.get(8).getTitle());
+			textField_10.setText(contracts.get(9).getTitle());
+			textField_11.setText(contracts.get(10).getTitle());
+			textField_12.setText(contracts.get(11).getTitle());
+			textField_13.setText(contracts.get(12).getTitle());
+			textField_14.setText(contracts.get(13).getTitle());
+			textField_15.setText(contracts.get(14).getTitle());
+			textField_16.setText(contracts.get(15).getTitle());
 			break;
 
 		case 17:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
-			textField_9.setText(contracts.get(8).getToDo());
-			textField_10.setText(contracts.get(9).getToDo());
-			textField_11.setText(contracts.get(10).getToDo());
-			textField_12.setText(contracts.get(11).getToDo());
-			textField_13.setText(contracts.get(12).getToDo());
-			textField_14.setText(contracts.get(13).getToDo());
-			textField_15.setText(contracts.get(14).getToDo());
-			textField_16.setText(contracts.get(15).getToDo());
-			textField_17.setText(contracts.get(16).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
+			textField_9.setText(contracts.get(8).getTitle());
+			textField_10.setText(contracts.get(9).getTitle());
+			textField_11.setText(contracts.get(10).getTitle());
+			textField_12.setText(contracts.get(11).getTitle());
+			textField_13.setText(contracts.get(12).getTitle());
+			textField_14.setText(contracts.get(13).getTitle());
+			textField_15.setText(contracts.get(14).getTitle());
+			textField_16.setText(contracts.get(15).getTitle());
+			textField_17.setText(contracts.get(16).getTitle());
 			break;
 
 		case 18:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
-			textField_9.setText(contracts.get(8).getToDo());
-			textField_10.setText(contracts.get(9).getToDo());
-			textField_11.setText(contracts.get(10).getToDo());
-			textField_12.setText(contracts.get(11).getToDo());
-			textField_13.setText(contracts.get(12).getToDo());
-			textField_14.setText(contracts.get(13).getToDo());
-			textField_15.setText(contracts.get(14).getToDo());
-			textField_16.setText(contracts.get(15).getToDo());
-			textField_17.setText(contracts.get(16).getToDo());
-			textField_18.setText(contracts.get(17).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
+			textField_9.setText(contracts.get(8).getTitle());
+			textField_10.setText(contracts.get(9).getTitle());
+			textField_11.setText(contracts.get(10).getTitle());
+			textField_12.setText(contracts.get(11).getTitle());
+			textField_13.setText(contracts.get(12).getTitle());
+			textField_14.setText(contracts.get(13).getTitle());
+			textField_15.setText(contracts.get(14).getTitle());
+			textField_16.setText(contracts.get(15).getTitle());
+			textField_17.setText(contracts.get(16).getTitle());
+			textField_18.setText(contracts.get(17).getTitle());
 			break;
 
 		case 19:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
-			textField_9.setText(contracts.get(8).getToDo());
-			textField_10.setText(contracts.get(9).getToDo());
-			textField_11.setText(contracts.get(10).getToDo());
-			textField_12.setText(contracts.get(11).getToDo());
-			textField_13.setText(contracts.get(12).getToDo());
-			textField_14.setText(contracts.get(13).getToDo());
-			textField_15.setText(contracts.get(14).getToDo());
-			textField_16.setText(contracts.get(15).getToDo());
-			textField_17.setText(contracts.get(16).getToDo());
-			textField_18.setText(contracts.get(17).getToDo());
-			textField_19.setText(contracts.get(18).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
+			textField_9.setText(contracts.get(8).getTitle());
+			textField_10.setText(contracts.get(9).getTitle());
+			textField_11.setText(contracts.get(10).getTitle());
+			textField_12.setText(contracts.get(11).getTitle());
+			textField_13.setText(contracts.get(12).getTitle());
+			textField_14.setText(contracts.get(13).getTitle());
+			textField_15.setText(contracts.get(14).getTitle());
+			textField_16.setText(contracts.get(15).getTitle());
+			textField_17.setText(contracts.get(16).getTitle());
+			textField_18.setText(contracts.get(17).getTitle());
+			textField_19.setText(contracts.get(18).getTitle());
 			break;
 
 		case 20:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
-			textField_9.setText(contracts.get(8).getToDo());
-			textField_10.setText(contracts.get(9).getToDo());
-			textField_11.setText(contracts.get(10).getToDo());
-			textField_12.setText(contracts.get(11).getToDo());
-			textField_13.setText(contracts.get(12).getToDo());
-			textField_14.setText(contracts.get(13).getToDo());
-			textField_15.setText(contracts.get(14).getToDo());
-			textField_16.setText(contracts.get(15).getToDo());
-			textField_17.setText(contracts.get(16).getToDo());
-			textField_18.setText(contracts.get(17).getToDo());
-			textField_19.setText(contracts.get(18).getToDo());
-			textField_20.setText(contracts.get(19).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
+			textField_9.setText(contracts.get(8).getTitle());
+			textField_10.setText(contracts.get(9).getTitle());
+			textField_11.setText(contracts.get(10).getTitle());
+			textField_12.setText(contracts.get(11).getTitle());
+			textField_13.setText(contracts.get(12).getTitle());
+			textField_14.setText(contracts.get(13).getTitle());
+			textField_15.setText(contracts.get(14).getTitle());
+			textField_16.setText(contracts.get(15).getTitle());
+			textField_17.setText(contracts.get(16).getTitle());
+			textField_18.setText(contracts.get(17).getTitle());
+			textField_19.setText(contracts.get(18).getTitle());
+			textField_20.setText(contracts.get(19).getTitle());
 			break;
 
 		case 21:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
-			textField_9.setText(contracts.get(8).getToDo());
-			textField_10.setText(contracts.get(9).getToDo());
-			textField_11.setText(contracts.get(10).getToDo());
-			textField_12.setText(contracts.get(11).getToDo());
-			textField_13.setText(contracts.get(12).getToDo());
-			textField_14.setText(contracts.get(13).getToDo());
-			textField_15.setText(contracts.get(14).getToDo());
-			textField_16.setText(contracts.get(15).getToDo());
-			textField_17.setText(contracts.get(16).getToDo());
-			textField_18.setText(contracts.get(17).getToDo());
-			textField_19.setText(contracts.get(18).getToDo());
-			textField_20.setText(contracts.get(19).getToDo());
-			textField_21.setText(contracts.get(20).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
+			textField_9.setText(contracts.get(8).getTitle());
+			textField_10.setText(contracts.get(9).getTitle());
+			textField_11.setText(contracts.get(10).getTitle());
+			textField_12.setText(contracts.get(11).getTitle());
+			textField_13.setText(contracts.get(12).getTitle());
+			textField_14.setText(contracts.get(13).getTitle());
+			textField_15.setText(contracts.get(14).getTitle());
+			textField_16.setText(contracts.get(15).getTitle());
+			textField_17.setText(contracts.get(16).getTitle());
+			textField_18.setText(contracts.get(17).getTitle());
+			textField_19.setText(contracts.get(18).getTitle());
+			textField_20.setText(contracts.get(19).getTitle());
+			textField_21.setText(contracts.get(20).getTitle());
 			break;
 
 		case 22:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
-			textField_9.setText(contracts.get(8).getToDo());
-			textField_10.setText(contracts.get(9).getToDo());
-			textField_11.setText(contracts.get(10).getToDo());
-			textField_12.setText(contracts.get(11).getToDo());
-			textField_13.setText(contracts.get(12).getToDo());
-			textField_14.setText(contracts.get(13).getToDo());
-			textField_15.setText(contracts.get(14).getToDo());
-			textField_16.setText(contracts.get(15).getToDo());
-			textField_17.setText(contracts.get(16).getToDo());
-			textField_18.setText(contracts.get(17).getToDo());
-			textField_19.setText(contracts.get(18).getToDo());
-			textField_20.setText(contracts.get(19).getToDo());
-			textField_21.setText(contracts.get(20).getToDo());
-			textField_22.setText(contracts.get(21).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
+			textField_9.setText(contracts.get(8).getTitle());
+			textField_10.setText(contracts.get(9).getTitle());
+			textField_11.setText(contracts.get(10).getTitle());
+			textField_12.setText(contracts.get(11).getTitle());
+			textField_13.setText(contracts.get(12).getTitle());
+			textField_14.setText(contracts.get(13).getTitle());
+			textField_15.setText(contracts.get(14).getTitle());
+			textField_16.setText(contracts.get(15).getTitle());
+			textField_17.setText(contracts.get(16).getTitle());
+			textField_18.setText(contracts.get(17).getTitle());
+			textField_19.setText(contracts.get(18).getTitle());
+			textField_20.setText(contracts.get(19).getTitle());
+			textField_21.setText(contracts.get(20).getTitle());
+			textField_22.setText(contracts.get(21).getTitle());
 			break;
 
 		case 23:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
-			textField_9.setText(contracts.get(8).getToDo());
-			textField_10.setText(contracts.get(9).getToDo());
-			textField_11.setText(contracts.get(10).getToDo());
-			textField_12.setText(contracts.get(11).getToDo());
-			textField_13.setText(contracts.get(12).getToDo());
-			textField_14.setText(contracts.get(13).getToDo());
-			textField_15.setText(contracts.get(14).getToDo());
-			textField_16.setText(contracts.get(15).getToDo());
-			textField_17.setText(contracts.get(16).getToDo());
-			textField_18.setText(contracts.get(17).getToDo());
-			textField_19.setText(contracts.get(18).getToDo());
-			textField_20.setText(contracts.get(19).getToDo());
-			textField_21.setText(contracts.get(20).getToDo());
-			textField_22.setText(contracts.get(21).getToDo());
-			textField_23.setText(contracts.get(22).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
+			textField_9.setText(contracts.get(8).getTitle());
+			textField_10.setText(contracts.get(9).getTitle());
+			textField_11.setText(contracts.get(10).getTitle());
+			textField_12.setText(contracts.get(11).getTitle());
+			textField_13.setText(contracts.get(12).getTitle());
+			textField_14.setText(contracts.get(13).getTitle());
+			textField_15.setText(contracts.get(14).getTitle());
+			textField_16.setText(contracts.get(15).getTitle());
+			textField_17.setText(contracts.get(16).getTitle());
+			textField_18.setText(contracts.get(17).getTitle());
+			textField_19.setText(contracts.get(18).getTitle());
+			textField_20.setText(contracts.get(19).getTitle());
+			textField_21.setText(contracts.get(20).getTitle());
+			textField_22.setText(contracts.get(21).getTitle());
+			textField_23.setText(contracts.get(22).getTitle());
 			break;
 
 		case 24:
-			textField_1.setText(contracts.get(0).getToDo());
-			textField_2.setText(contracts.get(1).getToDo());
-			textField_3.setText(contracts.get(2).getToDo());
-			textField_4.setText(contracts.get(3).getToDo());
-			textField_5.setText(contracts.get(4).getToDo());
-			textField_6.setText(contracts.get(5).getToDo());
-			textField_7.setText(contracts.get(6).getToDo());
-			textField_8.setText(contracts.get(7).getToDo());
-			textField_9.setText(contracts.get(8).getToDo());
-			textField_10.setText(contracts.get(9).getToDo());
-			textField_11.setText(contracts.get(10).getToDo());
-			textField_12.setText(contracts.get(11).getToDo());
-			textField_13.setText(contracts.get(12).getToDo());
-			textField_14.setText(contracts.get(13).getToDo());
-			textField_15.setText(contracts.get(14).getToDo());
-			textField_16.setText(contracts.get(15).getToDo());
-			textField_17.setText(contracts.get(16).getToDo());
-			textField_18.setText(contracts.get(17).getToDo());
-			textField_19.setText(contracts.get(18).getToDo());
-			textField_20.setText(contracts.get(19).getToDo());
-			textField_21.setText(contracts.get(20).getToDo());
-			textField_22.setText(contracts.get(21).getToDo());
-			textField_23.setText(contracts.get(22).getToDo());
-			textField_24.setText(contracts.get(23).getToDo());
+			textField_1.setText(contracts.get(0).getTitle());
+			textField_2.setText(contracts.get(1).getTitle());
+			textField_3.setText(contracts.get(2).getTitle());
+			textField_4.setText(contracts.get(3).getTitle());
+			textField_5.setText(contracts.get(4).getTitle());
+			textField_6.setText(contracts.get(5).getTitle());
+			textField_7.setText(contracts.get(6).getTitle());
+			textField_8.setText(contracts.get(7).getTitle());
+			textField_9.setText(contracts.get(8).getTitle());
+			textField_10.setText(contracts.get(9).getTitle());
+			textField_11.setText(contracts.get(10).getTitle());
+			textField_12.setText(contracts.get(11).getTitle());
+			textField_13.setText(contracts.get(12).getTitle());
+			textField_14.setText(contracts.get(13).getTitle());
+			textField_15.setText(contracts.get(14).getTitle());
+			textField_16.setText(contracts.get(15).getTitle());
+			textField_17.setText(contracts.get(16).getTitle());
+			textField_18.setText(contracts.get(17).getTitle());
+			textField_19.setText(contracts.get(18).getTitle());
+			textField_20.setText(contracts.get(19).getTitle());
+			textField_21.setText(contracts.get(20).getTitle());
+			textField_22.setText(contracts.get(21).getTitle());
+			textField_23.setText(contracts.get(22).getTitle());
+			textField_24.setText(contracts.get(23).getTitle());
 			break;
 
 		default:
 			System.out.println("데이터가 없습니다.");
 			break;
 		}
-
-		textField_25 = new JTextField();
-		textField_25.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				//yiss92
-				//조회후 값이 있다면 저장값 보여주고 수정가능하면 수정하기
-			}
-		});
-		textField_25.setEditable(false);
-		textField_25.setBounds(734, 37, 45, 21);
-		frame.getContentPane().add(textField_25);
-		textField_25.setColumns(10);
-
-		textField_26 = new JTextField();
-		textField_26.setEditable(false);
-		textField_26.setColumns(10);
-		textField_26.setBounds(734, 65, 45, 21);
-		frame.getContentPane().add(textField_26);
-
-		textField_27 = new JTextField();
-		textField_27.setEditable(false);
-		textField_27.setColumns(10);
-		textField_27.setBounds(734, 93, 45, 21);
-		frame.getContentPane().add(textField_27);
-
-		textField_28 = new JTextField();
-		textField_28.setEditable(false);
-		textField_28.setColumns(10);
-		textField_28.setBounds(734, 121, 45, 21);
-		frame.getContentPane().add(textField_28);
-
-		textField_29 = new JTextField();
-		textField_29.setEditable(false);
-		textField_29.setColumns(10);
-		textField_29.setBounds(734, 149, 45, 21);
-		frame.getContentPane().add(textField_29);
-
-		textField_30 = new JTextField();
-		textField_30.setEditable(false);
-		textField_30.setColumns(10);
-		textField_30.setBounds(734, 177, 45, 21);
-		frame.getContentPane().add(textField_30);
-
-		textField_31 = new JTextField();
-		textField_31.setEditable(false);
-		textField_31.setColumns(10);
-		textField_31.setBounds(734, 205, 45, 21);
-		frame.getContentPane().add(textField_31);
-
-		textField_32 = new JTextField();
-		textField_32.setEditable(false);
-		textField_32.setColumns(10);
-		textField_32.setBounds(734, 233, 45, 21);
-		frame.getContentPane().add(textField_32);
-
-		textField_33 = new JTextField();
-		textField_33.setEditable(false);
-		textField_33.setColumns(10);
-		textField_33.setBounds(734, 261, 45, 21);
-		frame.getContentPane().add(textField_33);
-
-		textField_34 = new JTextField();
-		textField_34.setEditable(false);
-		textField_34.setColumns(10);
-		textField_34.setBounds(734, 289, 45, 21);
-		frame.getContentPane().add(textField_34);
-
-		textField_35 = new JTextField();
-		textField_35.setEditable(false);
-		textField_35.setColumns(10);
-		textField_35.setBounds(734, 317, 45, 21);
-		frame.getContentPane().add(textField_35);
-
-		textField_36 = new JTextField();
-		textField_36.setEditable(false);
-		textField_36.setColumns(10);
-		textField_36.setBounds(734, 345, 45, 21);
-		frame.getContentPane().add(textField_36);
-
-		textField_37 = new JTextField();
-		textField_37.setEditable(false);
-		textField_37.setColumns(10);
-		textField_37.setBounds(734, 373, 45, 21);
-		frame.getContentPane().add(textField_37);
-
-		textField_38 = new JTextField();
-		textField_38.setEditable(false);
-		textField_38.setColumns(10);
-		textField_38.setBounds(734, 401, 45, 21);
-		frame.getContentPane().add(textField_38);
-
-		textField_39 = new JTextField();
-		textField_39.setEditable(false);
-		textField_39.setColumns(10);
-		textField_39.setBounds(734, 429, 45, 21);
-		frame.getContentPane().add(textField_39);
-
-		textField_40 = new JTextField();
-		textField_40.setEditable(false);
-		textField_40.setColumns(10);
-		textField_40.setBounds(734, 457, 45, 21);
-		frame.getContentPane().add(textField_40);
-
-		textField_41 = new JTextField();
-		textField_41.setEditable(false);
-		textField_41.setColumns(10);
-		textField_41.setBounds(734, 485, 45, 21);
-		frame.getContentPane().add(textField_41);
-
-		textField_42 = new JTextField();
-		textField_42.setEditable(false);
-		textField_42.setColumns(10);
-		textField_42.setBounds(734, 516, 45, 21);
-		frame.getContentPane().add(textField_42);
-
-		textField_43 = new JTextField();
-		textField_43.setEditable(false);
-		textField_43.setColumns(10);
-		textField_43.setBounds(734, 547, 45, 21);
-		frame.getContentPane().add(textField_43);
-
-		textField_44 = new JTextField();
-		textField_44.setEditable(false);
-		textField_44.setColumns(10);
-		textField_44.setBounds(734, 578, 45, 21);
-		frame.getContentPane().add(textField_44);
-
-		textField_45 = new JTextField();
-		textField_45.setEditable(false);
-		textField_45.setColumns(10);
-		textField_45.setBounds(734, 609, 45, 21);
-		frame.getContentPane().add(textField_45);
-
-		textField_46 = new JTextField();
-		textField_46.setEditable(false);
-		textField_46.setColumns(10);
-		textField_46.setBounds(734, 640, 45, 21);
-		frame.getContentPane().add(textField_46);
-
-		textField_47 = new JTextField();
-		textField_47.setEditable(false);
-		textField_47.setColumns(10);
-		textField_47.setBounds(734, 671, 45, 21);
-		frame.getContentPane().add(textField_47);
-
-		textField_48 = new JTextField();
-		textField_48.setEditable(false);
-		textField_48.setColumns(10);
-		textField_48.setBounds(734, 702, 45, 21);
-		frame.getContentPane().add(textField_48);
-
-		textField_49 = new JTextField();
-		textField_49.setEditable(false);
-		textField_49.setColumns(10);
-		textField_49.setBounds(734, 733, 45, 21);
-		frame.getContentPane().add(textField_49);
 	}
 }
