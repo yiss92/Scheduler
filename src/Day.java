@@ -650,9 +650,11 @@ public class Day {
 		button_1.setBounds(644, 7, 63, 25);
 		frame.getContentPane().add(button_1);
 		
-		lblNewLabel_3 = new JLabel("\uB144");
+		lblNewLabel_3 = new JLabel("");
 		lblNewLabel_3.setBounds(80, 12, 57, 15);
 		frame.getContentPane().add(lblNewLabel_3);
+		lblNewLabel_3.setText("test");
+		
 		
 		lblNewLabel_4 = new JLabel("\uB144");
 		lblNewLabel_4.setBounds(149, 12, 57, 15);
@@ -665,385 +667,385 @@ public class Day {
 		lblNewLabel_6 = new JLabel("\uC6D4");
 		lblNewLabel_6.setBounds(230, 12, 57, 15);
 		frame.getContentPane().add(lblNewLabel_6);
-
+         
 		// yiss92
 		// .getClass().textField.setText(contracts.get(3).getTitle());
-		switch (contracts.size()) {
-		case 1:
-			textField_1.setText(contracts.get(0).getTitle());
-			break;
-
-		case 2:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			break;
-
-		case 3:
-			textField_1.setText(contracts.get(1).getTitle());
-			textField_2.setText(contracts.get(2).getTitle());
-			textField_3.setText(contracts.get(3).getTitle());
-			break;
-
-		case 4:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			break;
-
-		case 5:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			break;
-
-		case 6:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			break;
-
-		case 7:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			break;
-
-		case 8:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			break;
-
-		case 9:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			textField_9.setText(contracts.get(8).getTitle());
-			break;
-
-		case 10:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			textField_9.setText(contracts.get(8).getTitle());
-			textField_10.setText(contracts.get(9).getTitle());
-			break;
-
-		case 11:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			textField_9.setText(contracts.get(8).getTitle());
-			textField_10.setText(contracts.get(9).getTitle());
-			textField_11.setText(contracts.get(10).getTitle());
-			break;
-
-		case 12:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			textField_9.setText(contracts.get(8).getTitle());
-			textField_10.setText(contracts.get(9).getTitle());
-			textField_11.setText(contracts.get(10).getTitle());
-			textField_12.setText(contracts.get(11).getTitle());
-			break;
-
-		case 13:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			textField_9.setText(contracts.get(8).getTitle());
-			textField_10.setText(contracts.get(9).getTitle());
-			textField_11.setText(contracts.get(10).getTitle());
-			textField_12.setText(contracts.get(11).getTitle());
-			textField_13.setText(contracts.get(12).getTitle());
-			break;
-
-		case 14:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			textField_9.setText(contracts.get(8).getTitle());
-			textField_10.setText(contracts.get(9).getTitle());
-			textField_11.setText(contracts.get(10).getTitle());
-			textField_12.setText(contracts.get(11).getTitle());
-			textField_13.setText(contracts.get(12).getTitle());
-			textField_14.setText(contracts.get(13).getTitle());
-			break;
-
-		case 15:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			textField_9.setText(contracts.get(8).getTitle());
-			textField_10.setText(contracts.get(9).getTitle());
-			textField_11.setText(contracts.get(10).getTitle());
-			textField_12.setText(contracts.get(11).getTitle());
-			textField_13.setText(contracts.get(12).getTitle());
-			textField_14.setText(contracts.get(13).getTitle());
-			textField_15.setText(contracts.get(14).getTitle());
-			break;
-
-		case 16:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			textField_9.setText(contracts.get(8).getTitle());
-			textField_10.setText(contracts.get(9).getTitle());
-			textField_11.setText(contracts.get(10).getTitle());
-			textField_12.setText(contracts.get(11).getTitle());
-			textField_13.setText(contracts.get(12).getTitle());
-			textField_14.setText(contracts.get(13).getTitle());
-			textField_15.setText(contracts.get(14).getTitle());
-			textField_16.setText(contracts.get(15).getTitle());
-			break;
-
-		case 17:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			textField_9.setText(contracts.get(8).getTitle());
-			textField_10.setText(contracts.get(9).getTitle());
-			textField_11.setText(contracts.get(10).getTitle());
-			textField_12.setText(contracts.get(11).getTitle());
-			textField_13.setText(contracts.get(12).getTitle());
-			textField_14.setText(contracts.get(13).getTitle());
-			textField_15.setText(contracts.get(14).getTitle());
-			textField_16.setText(contracts.get(15).getTitle());
-			textField_17.setText(contracts.get(16).getTitle());
-			break;
-
-		case 18:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			textField_9.setText(contracts.get(8).getTitle());
-			textField_10.setText(contracts.get(9).getTitle());
-			textField_11.setText(contracts.get(10).getTitle());
-			textField_12.setText(contracts.get(11).getTitle());
-			textField_13.setText(contracts.get(12).getTitle());
-			textField_14.setText(contracts.get(13).getTitle());
-			textField_15.setText(contracts.get(14).getTitle());
-			textField_16.setText(contracts.get(15).getTitle());
-			textField_17.setText(contracts.get(16).getTitle());
-			textField_18.setText(contracts.get(17).getTitle());
-			break;
-
-		case 19:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			textField_9.setText(contracts.get(8).getTitle());
-			textField_10.setText(contracts.get(9).getTitle());
-			textField_11.setText(contracts.get(10).getTitle());
-			textField_12.setText(contracts.get(11).getTitle());
-			textField_13.setText(contracts.get(12).getTitle());
-			textField_14.setText(contracts.get(13).getTitle());
-			textField_15.setText(contracts.get(14).getTitle());
-			textField_16.setText(contracts.get(15).getTitle());
-			textField_17.setText(contracts.get(16).getTitle());
-			textField_18.setText(contracts.get(17).getTitle());
-			textField_19.setText(contracts.get(18).getTitle());
-			break;
-
-		case 20:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			textField_9.setText(contracts.get(8).getTitle());
-			textField_10.setText(contracts.get(9).getTitle());
-			textField_11.setText(contracts.get(10).getTitle());
-			textField_12.setText(contracts.get(11).getTitle());
-			textField_13.setText(contracts.get(12).getTitle());
-			textField_14.setText(contracts.get(13).getTitle());
-			textField_15.setText(contracts.get(14).getTitle());
-			textField_16.setText(contracts.get(15).getTitle());
-			textField_17.setText(contracts.get(16).getTitle());
-			textField_18.setText(contracts.get(17).getTitle());
-			textField_19.setText(contracts.get(18).getTitle());
-			textField_20.setText(contracts.get(19).getTitle());
-			break;
-
-		case 21:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			textField_9.setText(contracts.get(8).getTitle());
-			textField_10.setText(contracts.get(9).getTitle());
-			textField_11.setText(contracts.get(10).getTitle());
-			textField_12.setText(contracts.get(11).getTitle());
-			textField_13.setText(contracts.get(12).getTitle());
-			textField_14.setText(contracts.get(13).getTitle());
-			textField_15.setText(contracts.get(14).getTitle());
-			textField_16.setText(contracts.get(15).getTitle());
-			textField_17.setText(contracts.get(16).getTitle());
-			textField_18.setText(contracts.get(17).getTitle());
-			textField_19.setText(contracts.get(18).getTitle());
-			textField_20.setText(contracts.get(19).getTitle());
-			textField_21.setText(contracts.get(20).getTitle());
-			break;
-
-		case 22:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			textField_9.setText(contracts.get(8).getTitle());
-			textField_10.setText(contracts.get(9).getTitle());
-			textField_11.setText(contracts.get(10).getTitle());
-			textField_12.setText(contracts.get(11).getTitle());
-			textField_13.setText(contracts.get(12).getTitle());
-			textField_14.setText(contracts.get(13).getTitle());
-			textField_15.setText(contracts.get(14).getTitle());
-			textField_16.setText(contracts.get(15).getTitle());
-			textField_17.setText(contracts.get(16).getTitle());
-			textField_18.setText(contracts.get(17).getTitle());
-			textField_19.setText(contracts.get(18).getTitle());
-			textField_20.setText(contracts.get(19).getTitle());
-			textField_21.setText(contracts.get(20).getTitle());
-			textField_22.setText(contracts.get(21).getTitle());
-			break;
-
-		case 23:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			textField_9.setText(contracts.get(8).getTitle());
-			textField_10.setText(contracts.get(9).getTitle());
-			textField_11.setText(contracts.get(10).getTitle());
-			textField_12.setText(contracts.get(11).getTitle());
-			textField_13.setText(contracts.get(12).getTitle());
-			textField_14.setText(contracts.get(13).getTitle());
-			textField_15.setText(contracts.get(14).getTitle());
-			textField_16.setText(contracts.get(15).getTitle());
-			textField_17.setText(contracts.get(16).getTitle());
-			textField_18.setText(contracts.get(17).getTitle());
-			textField_19.setText(contracts.get(18).getTitle());
-			textField_20.setText(contracts.get(19).getTitle());
-			textField_21.setText(contracts.get(20).getTitle());
-			textField_22.setText(contracts.get(21).getTitle());
-			textField_23.setText(contracts.get(22).getTitle());
-			break;
-
-		case 24:
-			textField_1.setText(contracts.get(0).getTitle());
-			textField_2.setText(contracts.get(1).getTitle());
-			textField_3.setText(contracts.get(2).getTitle());
-			textField_4.setText(contracts.get(3).getTitle());
-			textField_5.setText(contracts.get(4).getTitle());
-			textField_6.setText(contracts.get(5).getTitle());
-			textField_7.setText(contracts.get(6).getTitle());
-			textField_8.setText(contracts.get(7).getTitle());
-			textField_9.setText(contracts.get(8).getTitle());
-			textField_10.setText(contracts.get(9).getTitle());
-			textField_11.setText(contracts.get(10).getTitle());
-			textField_12.setText(contracts.get(11).getTitle());
-			textField_13.setText(contracts.get(12).getTitle());
-			textField_14.setText(contracts.get(13).getTitle());
-			textField_15.setText(contracts.get(14).getTitle());
-			textField_16.setText(contracts.get(15).getTitle());
-			textField_17.setText(contracts.get(16).getTitle());
-			textField_18.setText(contracts.get(17).getTitle());
-			textField_19.setText(contracts.get(18).getTitle());
-			textField_20.setText(contracts.get(19).getTitle());
-			textField_21.setText(contracts.get(20).getTitle());
-			textField_22.setText(contracts.get(21).getTitle());
-			textField_23.setText(contracts.get(22).getTitle());
-			textField_24.setText(contracts.get(23).getTitle());
-			break;
-
-		default:
-			System.out.println("데이터가 없습니다.");
-			break;
-		}
+//		switch (contracts.size()) {
+//		case 1:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			break;
+//
+//		case 2:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			break;
+//
+//		case 3:
+//			textField_1.setText(contracts.get(1).getTitle());
+//			textField_2.setText(contracts.get(2).getTitle());
+//			textField_3.setText(contracts.get(3).getTitle());
+//			break;
+//
+//		case 4:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			break;
+//
+//		case 5:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			break;
+//
+//		case 6:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			break;
+//
+//		case 7:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			break;
+//
+//		case 8:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			break;
+//
+//		case 9:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			textField_9.setText(contracts.get(8).getTitle());
+//			break;
+//
+//		case 10:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			textField_9.setText(contracts.get(8).getTitle());
+//			textField_10.setText(contracts.get(9).getTitle());
+//			break;
+//
+//		case 11:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			textField_9.setText(contracts.get(8).getTitle());
+//			textField_10.setText(contracts.get(9).getTitle());
+//			textField_11.setText(contracts.get(10).getTitle());
+//			break;
+//
+//		case 12:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			textField_9.setText(contracts.get(8).getTitle());
+//			textField_10.setText(contracts.get(9).getTitle());
+//			textField_11.setText(contracts.get(10).getTitle());
+//			textField_12.setText(contracts.get(11).getTitle());
+//			break;
+//
+//		case 13:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			textField_9.setText(contracts.get(8).getTitle());
+//			textField_10.setText(contracts.get(9).getTitle());
+//			textField_11.setText(contracts.get(10).getTitle());
+//			textField_12.setText(contracts.get(11).getTitle());
+//			textField_13.setText(contracts.get(12).getTitle());
+//			break;
+//
+//		case 14:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			textField_9.setText(contracts.get(8).getTitle());
+//			textField_10.setText(contracts.get(9).getTitle());
+//			textField_11.setText(contracts.get(10).getTitle());
+//			textField_12.setText(contracts.get(11).getTitle());
+//			textField_13.setText(contracts.get(12).getTitle());
+//			textField_14.setText(contracts.get(13).getTitle());
+//			break;
+//
+//		case 15:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			textField_9.setText(contracts.get(8).getTitle());
+//			textField_10.setText(contracts.get(9).getTitle());
+//			textField_11.setText(contracts.get(10).getTitle());
+//			textField_12.setText(contracts.get(11).getTitle());
+//			textField_13.setText(contracts.get(12).getTitle());
+//			textField_14.setText(contracts.get(13).getTitle());
+//			textField_15.setText(contracts.get(14).getTitle());
+//			break;
+//
+//		case 16:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			textField_9.setText(contracts.get(8).getTitle());
+//			textField_10.setText(contracts.get(9).getTitle());
+//			textField_11.setText(contracts.get(10).getTitle());
+//			textField_12.setText(contracts.get(11).getTitle());
+//			textField_13.setText(contracts.get(12).getTitle());
+//			textField_14.setText(contracts.get(13).getTitle());
+//			textField_15.setText(contracts.get(14).getTitle());
+//			textField_16.setText(contracts.get(15).getTitle());
+//			break;
+//
+//		case 17:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			textField_9.setText(contracts.get(8).getTitle());
+//			textField_10.setText(contracts.get(9).getTitle());
+//			textField_11.setText(contracts.get(10).getTitle());
+//			textField_12.setText(contracts.get(11).getTitle());
+//			textField_13.setText(contracts.get(12).getTitle());
+//			textField_14.setText(contracts.get(13).getTitle());
+//			textField_15.setText(contracts.get(14).getTitle());
+//			textField_16.setText(contracts.get(15).getTitle());
+//			textField_17.setText(contracts.get(16).getTitle());
+//			break;
+//
+//		case 18:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			textField_9.setText(contracts.get(8).getTitle());
+//			textField_10.setText(contracts.get(9).getTitle());
+//			textField_11.setText(contracts.get(10).getTitle());
+//			textField_12.setText(contracts.get(11).getTitle());
+//			textField_13.setText(contracts.get(12).getTitle());
+//			textField_14.setText(contracts.get(13).getTitle());
+//			textField_15.setText(contracts.get(14).getTitle());
+//			textField_16.setText(contracts.get(15).getTitle());
+//			textField_17.setText(contracts.get(16).getTitle());
+//			textField_18.setText(contracts.get(17).getTitle());
+//			break;
+//
+//		case 19:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			textField_9.setText(contracts.get(8).getTitle());
+//			textField_10.setText(contracts.get(9).getTitle());
+//			textField_11.setText(contracts.get(10).getTitle());
+//			textField_12.setText(contracts.get(11).getTitle());
+//			textField_13.setText(contracts.get(12).getTitle());
+//			textField_14.setText(contracts.get(13).getTitle());
+//			textField_15.setText(contracts.get(14).getTitle());
+//			textField_16.setText(contracts.get(15).getTitle());
+//			textField_17.setText(contracts.get(16).getTitle());
+//			textField_18.setText(contracts.get(17).getTitle());
+//			textField_19.setText(contracts.get(18).getTitle());
+//			break;
+//
+//		case 20:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			textField_9.setText(contracts.get(8).getTitle());
+//			textField_10.setText(contracts.get(9).getTitle());
+//			textField_11.setText(contracts.get(10).getTitle());
+//			textField_12.setText(contracts.get(11).getTitle());
+//			textField_13.setText(contracts.get(12).getTitle());
+//			textField_14.setText(contracts.get(13).getTitle());
+//			textField_15.setText(contracts.get(14).getTitle());
+//			textField_16.setText(contracts.get(15).getTitle());
+//			textField_17.setText(contracts.get(16).getTitle());
+//			textField_18.setText(contracts.get(17).getTitle());
+//			textField_19.setText(contracts.get(18).getTitle());
+//			textField_20.setText(contracts.get(19).getTitle());
+//			break;
+//
+//		case 21:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			textField_9.setText(contracts.get(8).getTitle());
+//			textField_10.setText(contracts.get(9).getTitle());
+//			textField_11.setText(contracts.get(10).getTitle());
+//			textField_12.setText(contracts.get(11).getTitle());
+//			textField_13.setText(contracts.get(12).getTitle());
+//			textField_14.setText(contracts.get(13).getTitle());
+//			textField_15.setText(contracts.get(14).getTitle());
+//			textField_16.setText(contracts.get(15).getTitle());
+//			textField_17.setText(contracts.get(16).getTitle());
+//			textField_18.setText(contracts.get(17).getTitle());
+//			textField_19.setText(contracts.get(18).getTitle());
+//			textField_20.setText(contracts.get(19).getTitle());
+//			textField_21.setText(contracts.get(20).getTitle());
+//			break;
+//
+//		case 22:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			textField_9.setText(contracts.get(8).getTitle());
+//			textField_10.setText(contracts.get(9).getTitle());
+//			textField_11.setText(contracts.get(10).getTitle());
+//			textField_12.setText(contracts.get(11).getTitle());
+//			textField_13.setText(contracts.get(12).getTitle());
+//			textField_14.setText(contracts.get(13).getTitle());
+//			textField_15.setText(contracts.get(14).getTitle());
+//			textField_16.setText(contracts.get(15).getTitle());
+//			textField_17.setText(contracts.get(16).getTitle());
+//			textField_18.setText(contracts.get(17).getTitle());
+//			textField_19.setText(contracts.get(18).getTitle());
+//			textField_20.setText(contracts.get(19).getTitle());
+//			textField_21.setText(contracts.get(20).getTitle());
+//			textField_22.setText(contracts.get(21).getTitle());
+//			break;
+//
+//		case 23:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			textField_9.setText(contracts.get(8).getTitle());
+//			textField_10.setText(contracts.get(9).getTitle());
+//			textField_11.setText(contracts.get(10).getTitle());
+//			textField_12.setText(contracts.get(11).getTitle());
+//			textField_13.setText(contracts.get(12).getTitle());
+//			textField_14.setText(contracts.get(13).getTitle());
+//			textField_15.setText(contracts.get(14).getTitle());
+//			textField_16.setText(contracts.get(15).getTitle());
+//			textField_17.setText(contracts.get(16).getTitle());
+//			textField_18.setText(contracts.get(17).getTitle());
+//			textField_19.setText(contracts.get(18).getTitle());
+//			textField_20.setText(contracts.get(19).getTitle());
+//			textField_21.setText(contracts.get(20).getTitle());
+//			textField_22.setText(contracts.get(21).getTitle());
+//			textField_23.setText(contracts.get(22).getTitle());
+//			break;
+//
+//		case 24:
+//			textField_1.setText(contracts.get(0).getTitle());
+//			textField_2.setText(contracts.get(1).getTitle());
+//			textField_3.setText(contracts.get(2).getTitle());
+//			textField_4.setText(contracts.get(3).getTitle());
+//			textField_5.setText(contracts.get(4).getTitle());
+//			textField_6.setText(contracts.get(5).getTitle());
+//			textField_7.setText(contracts.get(6).getTitle());
+//			textField_8.setText(contracts.get(7).getTitle());
+//			textField_9.setText(contracts.get(8).getTitle());
+//			textField_10.setText(contracts.get(9).getTitle());
+//			textField_11.setText(contracts.get(10).getTitle());
+//			textField_12.setText(contracts.get(11).getTitle());
+//			textField_13.setText(contracts.get(12).getTitle());
+//			textField_14.setText(contracts.get(13).getTitle());
+//			textField_15.setText(contracts.get(14).getTitle());
+//			textField_16.setText(contracts.get(15).getTitle());
+//			textField_17.setText(contracts.get(16).getTitle());
+//			textField_18.setText(contracts.get(17).getTitle());
+//			textField_19.setText(contracts.get(18).getTitle());
+//			textField_20.setText(contracts.get(19).getTitle());
+//			textField_21.setText(contracts.get(20).getTitle());
+//			textField_22.setText(contracts.get(21).getTitle());
+//			textField_23.setText(contracts.get(22).getTitle());
+//			textField_24.setText(contracts.get(23).getTitle());
+//			break;
+//
+//		default:
+//			System.out.println("데이터가 없습니다.");
+//			break;
+//		}
 	}
 }

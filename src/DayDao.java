@@ -126,7 +126,7 @@ public class DayDao {
 		Today result = null;
 		try {
 
-			sql = "select * from todo where count=?";
+			sql = "select * from todo where year=?";
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, accountNum);
 
