@@ -8,8 +8,10 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 public class Result extends JDialog {
+	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -59,5 +61,10 @@ public class Result extends JDialog {
 		JButton btnNewButton_1 = new JButton("\uC218\uC815");
 		btnNewButton_1.setBounds(316, 297, 99, 25);
 		getContentPane().add(btnNewButton_1);
+		
+		textField = new JTextField();
+		textField.setBounds(73, 101, 342, 21);
+		getContentPane().add(textField);
+		textField.setColumns(10);
 	}
 }

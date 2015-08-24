@@ -150,6 +150,36 @@ public class DayDao {
 		return result;
 	}
 	
+	public Today select() {
+		Today result = null;
+		try {
+
+			sql = "select * from todo";
+			pstmt = con.prepareStatement(sql);
+			//pstmt.setString(1, accountNum);
+
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				result = new Today();
+				result.setTitle(rs.getString(1));
+				result.setToDo(rs.getString(2));
+				result.setLocation(rs.getString(3));
+				result.setDescribed(rs.getString(4));
+				result.setYear(rs.getString(5));
+				result.setWeek(rs.getString(6));
+				result.setDay(rs.getString(7));
+				result.setHours(rs.getString(8));
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return result;
+		
+	}
+	
+	
 	public List<Today> selectList(){
 		List<Today> result = new ArrayList<>();
 				

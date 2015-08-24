@@ -75,7 +75,7 @@ public class ToDo extends JDialog {
 				today.setTitle(textField.getText());
 				daydao.insert(today,temp);
 				
-				Modified modified = new Modified();
+				Described modified = new Described();
 				modified.setVisible(true);
 				contentPanel.setVisible(false);
 				dispose();
@@ -88,7 +88,7 @@ public class ToDo extends JDialog {
 		btnNewButton_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				Modified modified = new Modified();
+				Described modified = new Described();
 				modified.setVisible(true);
 				contentPanel.setVisible(false);
 				dispose();

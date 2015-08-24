@@ -1,8 +1,14 @@
+import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
+import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.sql.SQLException;
@@ -91,13 +97,120 @@ public class Day {
 
 	//yiss92
 	public void modified() {
-		Modified modified = new Modified();
+		Described modified = new Described();
+		
+		modified.setBounds(100, 100, 450, 300);
+		modified.getContentPane().setLayout(null);
+		{
+			JButton btnNewButton = new JButton("\uC800\uC7A5");
+			btnNewButton.setBounds(79, 10, 99, 25);
+			modified.getContentPane().add(btnNewButton);
+		}
+		{
+			JButton btnNewButton_1 = new JButton("\uC0AD\uC81C");
+			btnNewButton_1.setBounds(209, 10, 99, 25);
+			modified.getContentPane().add(btnNewButton_1);
+		}
+		{
+			textField = new JTextField();
+			textField.setBounds(79, 61, 317, 21);
+			modified.getContentPane().add(textField);
+			textField.setColumns(10);
+		}
+		{
+			JLabel lblNewLabel = new JLabel("\uC138\uBD80\uC815\uBCF4");
+			lblNewLabel.setBounds(64, 121, 57, 15);
+			modified.getContentPane().add(lblNewLabel);
+		}
+		{
+			JLabel lblNewLabel_1 = new JLabel("\uC7A5\uC18C");
+			lblNewLabel_1.setBounds(74, 146, 57, 15);
+			modified.getContentPane().add(lblNewLabel_1);
+		}
+		{
+			textField_1 = new JTextField();
+			textField_1.setBounds(133, 143, 263, 21);
+			modified.getContentPane().add(textField_1);
+			textField_1.setColumns(10);
+		}
+		{
+			JLabel lblNewLabel_2 = new JLabel("\uC124\uBA85");
+			lblNewLabel_2.setBounds(64, 183, 57, 15);
+			modified.getContentPane().add(lblNewLabel_2);
+		}
+		
+		JTextArea textArea = new JTextArea();
+		textArea.setBounds(79, 208, 317, 43);
+		modified.getContentPane().add(textArea);				
+	
 		modified.setVisible(true);
 	}
 
 	public void doingtodo() {
 
 		ToDo todo = new ToDo();
+		JPanel contentPanel = new JPanel();
+		JTextField textField;
+		
+		todo.setBounds(100, 100, 450, 300);
+		todo.getContentPane().setLayout(new BorderLayout());
+		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
+		todo.getContentPane().add(contentPanel, BorderLayout.CENTER);
+		//yiss92
+		Today today = new Today();
+		DayDao daydao = new DayDao();
+		
+		contentPanel.setLayout(null);
+		{
+			JLabel lblNewLabel = new JLabel("\uC2DC\uAC04");
+			lblNewLabel.setBounds(89, 31, 57, 15);
+			contentPanel.add(lblNewLabel);
+		}
+		{
+			JLabel lblNewLabel_1 = new JLabel("New label");
+			lblNewLabel_1.setBounds(158, 31, 233, 15);
+			contentPanel.add(lblNewLabel_1);
+		}
+		{
+			JLabel lblNewLabel_2 = new JLabel("\uB0B4\uC6A9");
+			lblNewLabel_2.setBounds(89, 67, 57, 15);
+			contentPanel.add(lblNewLabel_2);
+		}
+		{
+			textField = new JTextField();
+			textField.setBounds(150, 64, 266, 21);
+			contentPanel.add(textField);
+			textField.setColumns(10);					
+		}
+		
+		JButton btnNewButton = new JButton("\uC77C\uC815\uB9CC\uB4E4\uAE30");
+		btnNewButton.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				//yiss92
+				//yiss92
+				int temp = 0;
+				today.setTitle(textField.getText());
+				daydao.insert(today,temp);
+				
+				modified();
+				//dispose();
+			}
+		});
+		btnNewButton.setBounds(89, 218, 99, 25);
+		contentPanel.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("\uC77C\uC815\uC218\uC815");
+		btnNewButton_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				modified();
+				//dispose();
+			}
+		});
+		btnNewButton_1.setBounds(227, 218, 99, 25);
+		contentPanel.add(btnNewButton_1);
+
 		todo.setVisible(true);
 	}
 
@@ -121,7 +234,7 @@ public class Day {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				//yiss92
-				String temp = "to";
+				String temp = " ";
 				daydao.select(temp);
 
 				try {
